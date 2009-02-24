@@ -1,0 +1,314 @@
+/* Start file $Id: basic.css 5678 2008-01-28 13:22:51Z jronn $ */
+/* styling of text */
+
+* {
+  font-family: Verdana;	
+	font-size: 11px; /*  font-size: 0.95em; */
+}
+
+p.short {
+	line-height: 15px;
+}
+
+ * {
+	line-height: 17px;
+}	
+
+/* Styling of headers */
+
+/* H1 should never be used in textareas */
+
+h2, .portlet-section-header {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 17px; /*  line-height: 1.5em; */
+	margin: 0 0 10px 0;	
+}
+
+h3, .portlet-section-subheader {
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 17px; /*  line-height: 1.5em; */
+	margin: 0 0 4px 0;	
+}
+
+
+/* Styling of lists */
+
+ol {
+	margin-left: 10px;
+	padding: 0px;	
+
+}
+
+ol li {
+	padding-left: 2px;
+	margin-left:10px;
+}
+
+/* Hack to enable correct vertical position of list-style-image in IE6 */
+ul {
+  list-style: none !important;
+  list-style-image: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+ul ul {
+
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+	padding-left: 16px;
+  background-image: url(../images/bluedot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 7px;
+}
+
+ul ul li {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  list-style-image: none !important;
+  background-image: url(../images/graydot.png);
+  background-repeat: no-repeat;
+  background-position: 0px 7px;
+}
+
+/* LINKS */
+
+a, portal-links {
+	color: #0080a5;
+}
+
+a:visited, portal-links:visited {
+	color: #7b736c;
+}
+
+a:hover, portal-links:hover {
+	text-decoration: underline;
+}
+
+hr {
+  border: 0px;
+  border-top: 1px dotted #bbb;
+  height: 1px;
+}
+
+/* IE hack - ie6 will show a solid border instead of dotted */
+* html hr {
+border: 1px solid #bbb;
+}
+
+div.hr {
+	font-size:0px;
+	display: block;
+	width: auto;
+	line-height: 1px;
+	height: 1px;
+	border: 0;
+	margin: 0;
+	padding: 0;	
+	background-image: url('../images/iedotty.gif');
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+div.mitvirk_bg {
+	background-color: #B0DFEC;
+}
+
+/* Styling of tables */
+table, .portlet-table-text, caption, .portlet-table-header, tr, td, th {
+	line-height: 15px;
+}
+
+td, th, caption, .portlet-table-header, .portlet-table-text {
+	padding: 6px 4px 6px 10px !important;
+}
+
+caption, .portlet-table-header {
+	margin-top: 16px !important;
+	text-align: left !important;
+	font-weight: bold !important;
+	color: white !important;
+	background-image: url('../images/tablehead.png') !important;
+	background-position: top left !important;
+	background-repeat: repeat-x !important;
+}
+
+th, .portlet-table-subheader {
+	text-align: left;
+	margin:0;
+	font-weight: bold;
+	background-color: #d9eff6;
+	border-bottom: dotted 1px #bbb5b1;		
+}
+
+table, .portlet-table-body {
+	margin: 0 0 16px 0;
+	border-collapse: collapse;
+	border-right: solid 1px #dcdad8;		
+	border-left: solid 1px #dcdad8;		
+}
+
+td {
+	margin: 0;
+	border-bottom: dotted 1px #bbb5b1;
+}
+
+/* used for WYSIWYG template */ 
+.graybox {
+	border: solid 1px #d6d2d0;
+	background-image: url(../images/gbl.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	margin-left: 13px;
+	margin-bottom: 14px;
+	float: right;
+	padding: 10px;	
+}
+
+.graybox h3 {
+	font-size: 11px;
+	color: #7b736c;
+}
+
+.graybox p {
+	padding: 0;
+	margin: 0;
+}
+
+.graybox a {
+	padding-left: 20px;
+	display: block;
+	margin-bottom: 5px;
+
+}
+
+.graybox a.information {
+	background-image: url(../images/type_information.gif);
+	background-position: 0px 3px;
+	background-repeat: no-repeat;
+}
+
+.graybox a.myndighed {
+	background-image: url(../images/type_authority.gif);
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+}
+
+.graybox a.indberetning {
+	background-image: url(../images/type_formula.gif);
+	background-position: 0px 3px;
+	background-repeat: no-repeat;
+}
+
+.spot, .spot_image {
+	border: solid 1px #d6d2d0;
+	margin: 16px 0px 16px 0px;
+}
+
+.spot, .spot_image .content {
+	margin: 0px;
+	padding: 10px;
+}
+
+.spot h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+}
+
+.spot a, .spot_image a {
+	background-image: url(../images/a2.gif);
+	background-position: 0px 3px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.spot_image, .spot_image img, .spot_image .content {
+	float: left;
+}
+
+.spot p, .spot_image img, .spot_image p {
+	margin: 0;
+	padding: 0;
+}
+
+.spot_image {
+	width: 100%;
+}
+
+/* first time login */
+.ftlbox {
+	padding: 10px;
+	height: 77px;
+	background-image: url(../images/firstime.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	margin: 0 0px 16px 0; /* avoid 2 more pixels from border */	
+}
+
+/* first time login */
+.edit .ftlbox {
+	background-color: ffffdd;
+	height: auto !important;
+}
+
+/* Add this class to the label enclosing the error field. 
+Add description to EM element within the label element */
+.error_field {
+  color: #dd0033;
+}
+.error_field em {
+  color: #000;
+}
+
+.op h2 {
+	background-image: url(../images/error.gif);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	height: 20px;
+	border: 0 !important;
+	margin: 0 0 0px 0;
+	color: #dd0033;
+	padding-left: 20px !important;
+	padding-bottom: 0px !important;
+	margin-bottom: 2px !important;
+}
+
+a img {
+	border: 0px;
+}
+
+.push {
+	margin-top: 10px;
+}
+
+.center {
+    margin-left: 224px;
+}
+
+/* Clear hack to fix crossbrowser clear issues */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* for br.clearfix to avoid a wrapping element of each line to be cleared */
+br.clearfix {  clear: both; }

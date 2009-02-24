@@ -1,0 +1,74 @@
+/* Start file $Id: leftmenu.css 4528 2007-12-06 12:39:04Z jronn $ */
+#menu {
+    float: left;
+    width: 218px;
+}
+
+.menuside {
+	background-image: url(../images/menuside.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 1px;
+	height: 107px;
+	float:left;
+}
+
+.menucenter {
+	background-image: url(../images/lightblue_gradient.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	float:left;
+	width:186px;
+	padding: 9px 10px;
+	line-height: 17px;
+	border-top: solid 1px #d6d2d0;
+}
+
+.menucenter div {
+	margin: 0 0 4px 0px;
+}
+
+.menucenter div.level1 {
+	margin-left: 0px;
+}
+
+.menucenter div.level2 {
+	margin-left: 10px;
+}
+
+.menucenter div.level3 {
+	margin-left: 20px;
+}
+
+.menucenter div.level4 {
+	margin-left: 30px;
+}
+
+.menucenter div.level5 {
+	margin-left: 40px;
+}
+
+.menucenter a {
+	color: #079dc4;
+	text-decoration: none;
+}
+
+.menucenter a.current {
+	font-weight: bold;	
+}
+
+.menucenter div a.current {
+	display:block;
+	font-weight: bold;
+	text-decoration:none;
+	color: #0080a5;
+  background-image: url(../images/a2.gif);
+	background-position: center left;
+	background-repeat: no-repeat;		
+	padding-left: 10px;
+	margin-left: -10px;	
+}
+
+.menucenter div.level1 a.current {
+  background-image: none;
+}

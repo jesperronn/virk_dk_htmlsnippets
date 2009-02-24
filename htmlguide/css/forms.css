@@ -1,0 +1,228 @@
+/* Start file $Id: forms.css 6545 2008-04-15 15:16:17Z jomoll $ */
+form {
+  display: inline;
+}
+
+#content form {
+  display: block;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+ }
+
+.fieldset {
+	position: relative;
+	padding: 30px 0px 6px 6px;
+	background: #efeeed;
+	font-size: 90%;
+
+	margin-bottom: 16px;
+	background-image: url(../images/formhead.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	line-height: 17px;
+}
+
+.fieldset input {
+	padding: 1px 1px;
+}
+
+.no_legend {
+	position: relative;
+	padding: 10px;
+	background: #efeeed;
+	margin-bottom: 16px;
+}
+
+.no_space {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.floatleft {
+	float: left;
+	padding: 0px;
+	margin-right: 6px;
+	display:inline; /* hack for IE Doubled Float-Margin Bug */
+}
+
+/*FIXME quickfix for dealing with Firefox strange 4px extra space
+http://groups.google.com/group/comp.infosystems.www.authoring.stylesheets/browse_thread/thread/8792eae0eadda45f#2950015e564491b8
+*/
+.floatleft > input {
+  margin-right: -0px !important;
+}
+
+.floatright {
+	float: right;
+	margin-left: 6px;
+	display:inline; /* hack for IE Doubled Float-Margin Bug */
+}
+
+.news {
+	display:block;
+	background:#EFEEED;
+	margin-bottom:16px;
+	margin-top:16px;
+	padding:30px 6px 6px;
+}
+
+legend span {
+	width: 410px;
+	top: 0; left: 0;
+	position: absolute;
+	padding:6px 4px 6px 6px;
+	color: #000;
+	font-weight: bold;
+}
+
+span.req {
+	color: red;
+}
+
+button, button.portlet-form-button {
+	height: 21px;
+	padding-left:  5px;
+	padding-right: 5px;
+}
+
+input, .portlet-form-input-field {
+	height: 14px;
+	padding: 1px;
+	line-height:14px;	
+}
+
+input.button, input.portlet-form-button {
+	height: 22px;
+}
+
+textarea {
+	border: 1px solid #079dc4;
+	padding: 1px;
+	width: 410px;
+	margin:0;
+	margin-bottom: 10px;
+}
+
+select {
+	border: 1px solid #079dc4;
+/*	height: 19px; 18px cuts bottom letters in IE. Auto is too small, 19px is too big in FF*/
+	width: 415px; /*egentlig 1px for bred, men border er hvid på højreside*/
+	margin-top: 1px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+input.text, .portlet-form-input-field {
+/* selectbox does not respond to height or border*/
+	border: 1px solid #079dc4;
+	height: 15px; /* 19 px outside borders incl 1px padding and 1px border*/
+	width: 408px;
+	margin: 0 0 10px 0;
+	
+}
+
+input.button, .portlet-form-button {
+  height: 22px;
+}
+
+button.short, input.short {
+  width: 207px;
+}
+
+input.text.short {
+	width: 200px; /* 202px -2 for border and no padding */
+}
+
+select.short {
+	width: 203px;
+}
+
+/* Special form elements */
+input.address_number, input.address_floor, input.address_door {
+	width: 60px;
+}
+
+.legal_text { /*legal text, disclaimer with the same width as all form elements */
+	width: 410px;
+	height: 200px;
+	overflow-y: scroll;
+	border: 2px inset #ccc;
+}
+
+/* class for read-only fields */
+label.readonly, .portlet-form-label {
+	font-weight: bold;
+}
+
+label.readonly span, .portlet-form-label span {
+	font-weight: normal;
+	line-height: 22px;
+}
+
+fieldset p {
+	margin-bottom: 0px;
+	margin-top: 2px;
+}
+
+/* Hack to fix vertical alignment of checkboxes and labels in Firefox
+	Explanation: First rule is interpreted in Firefox 1 and 2, but also in IE7 (because IE7 doesn't apply standardised error handling). This is fixed in the next rule, with an IE7-only selector 
+	Afterwards, the same is done for radio buttons.
+*/
+x:-moz-any-link, label > input[type="checkbox"] {
+	vertical-align: -6px;
+}
+
+*:first-child+html label > input[type="checkbox"] {
+	vertical-align: -1px;
+}
+
+x:-moz-any-link, label > input[type="radio"] {
+	vertical-align: -4px;
+	width: auto;
+}
+
+*:first-child+html label > input[type="radio"] {
+	vertical-align: -2px;
+}
+
+.portlet-form-field-label{
+display:block;
+}
+
+fieldset legend img{
+	border:0;
+	margin-right: 4px;
+}
+
+/* previous/next navigation */
+.prevnext input{
+  color: #cd5c00;
+  font-weight: bold;
+  border: 0;
+}
+
+.prevnext input.prev{
+  padding-left: 20px;
+  background: #fff url(../images/prev.png) left no-repeat;
+  text-align:left;
+}
+
+.prevnext input.next{
+  padding-right: 20px;
+  background: #fff url(../images/next.png) right no-repeat;
+  text-align:right;
+}
+
+.prevnext .prev.disabled{
+  color: #bbb;
+  background-image: url(../images/prev_disabled.png);
+}
+
+.prevnext .next.disabled{
+  color: #bbb;
+  background-image: url(../images/next_disabled.png);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>HTML-guide - Forrige/Næste knapper</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="htmlguide">
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+      <li class="menuitem selected">
+        <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+      </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+    <div id="sidebar">
+			<div id="campaign">
+				<div class="box">
+					<h2>Relateret info</h2>
+  			  <p>Se fuldt eksempel på side, som benytter forrige/næste knap:</p>
+					<ul><li><a href="example2.html">Eksempel 2</a></li></ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="">Forrige/næste knapper</a>
+</div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+    <ul>
+      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+    	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+    	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+    	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+    </ul>
+  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To spaltet form layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li class="selected"><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+       <li><a href="example1.html">Kontaktformular</a></li>
+        <li><a href="example2.html">Udvidet adresseformular</a></li>
+        <li><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+        		</div>
+				<div class="menuside"></div>
+      		</div>
+			<div id="content" class="center">
+
+    	<h2>Forrige/Næste knapper</h2>
+    	<p>Dette eksempel illustrerer brugen af knapper til navigation mellem flere sider i en indberetning.</p>
+    	<p>Har en indberetning flere sider, skal navigationen mellem siderne ske ved hjælp af knapper i bunden af indberetningen. Knappernes layout og tekst er fastlagt. Dette sikrer et ensartet layout og konformiteten bidrager til at Virk.dk's brugere hurtigt genkender navigationsprincipper ved nye indberetninger.</p>
+
+			<form name="dummy_form" method="get" action="#">
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>Standardknapperne 'forrige' og 'næste'</span></legend>
+            <p>Almindelige knapper i et indberetningsforløb vises som illustreret nedenfor. Både forrige og næste er synlige og aktive i dette eksempel.</p>
+            <p class="prevnext">
+              <input type="button" value="Forrige" class="floatleft button prev"/>
+              <input type="submit" value="Næste"   class="floatright button next"/>
+  
+            </p>
+          </fieldset>
+        </div>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>HTML-markup for 'forrige' og 'næste' knapper</span></legend>
+<pre>
+&lt;p class="prevnext"&gt;
+  &lt;input type="button" value="Forrige" class="floatleft button prev" /&gt;
+  &lt;input type="submit" value="Næste"   class="floatright button next" /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br class="clearfix" /&gt;&lt;/p&gt;
+</pre>
+        </fieldset>
+      </div>
+      
+      <div class="fieldset">
+        <fieldset>
+          <legend><span>Inaktivering af en eller flere knapper</span></legend>
+          <p>Det første og sidste trin i en indberetning gør brug af inaktive knappper. Begge knapper er synlige, men kun den ene er aktiv!</p>
+          <p><strong>Bemærk:</strong> Husk at sætte 'class' attributten til "disabled", men husk også at sætte disabled="disabled" på elementet.</p>
+          <p class="prevnext">
+            <input type="button" value="Forrige" class="floatleft button prev disabled" disabled="disabled" />
+            <input type="submit" value="Næste"   class="floatright button next" />
+          </p>
+        </fieldset>
+      </div>
+      <div class="fieldset">
+        <fieldset>
+          <legend><span>HTML-markup for inaktive 'forrige' og 'næste' knapper</span></legend>
+<pre>
+&lt;p class="prevnext"&gt;
+  &lt;input type="button" value="Forrige"
+    class="floatleft button prev <em>disabled</em>" <em>disabled="disabled"</em> /&gt;
+  &lt;input type="submit" value="Næste" class="floatright button next" /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br class="clearfix" /&gt;&lt;/p&gt;
+</pre>
+        </fieldset>
+      </div>
+      <p><strong>Bemærk:</strong> P-elementet under forrige/næste knapperne er valgfrit, da der som hovedregel ikke vil være andet under knapperne. (Da de er placeret nederst på siden).</p>
+    </form>  
+	</div>
+</div>
+</div>
+	<div id="footer">
+    <p>HTML Guide, Virk 3.parts løsninger <small>($Id: prevnext.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	</div>
+
+</div>
+</body>
+</html>

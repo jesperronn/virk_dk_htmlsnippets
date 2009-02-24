@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - Tabeller</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="htmlguide">
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+		<div id="navigator">
+    <ul>
+      <li class="menuitem selected">
+        <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+      </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">Tabeller</a>
+</div>
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+    <ul>
+      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+    	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+    	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+    	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+    </ul>
+  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To spaltet form layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li class="selected"><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+      <li><a href="example1.html">Kontaktformular</a></li>
+      <li><a href="example2.html">Udvidet adresseformular</a></li>
+      <li><a href="example3.html">Forskellige felter</a></li>
+   </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+        		</div>
+				<div class="menuside"></div>
+      		</div>
+			<div id="content" class="center">
+<h2>Tabeller</h2>
+<p>Dette eksempel illustrerer brugen af tabeller i indberetninger.</p>
+
+			<form name="dummy_form" method="get" action="#">
+        <p>Tabeller skal bruges til at tabelopstille indhold, der er naturligt grupperet i rækker og kolonner. Og ikke til at sørge for at design eller layout opfører sig korrekt. Tabeller bør udelukkende bruges til at opliste data.</p>
+        <p>Tabeller kan overordnet placeres to steder på en indberetning: Inde i et fieldset og udenfor.</p>
+        <p>Bemærk: for at få tabellen til at fylde 100% i bredden, tilføjes klassen <code>&lt;table <em>class="table"</em>&gt;</code>.</p>
+        <div class="hr"></div>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>Tabel placeret i et fieldset - uden overskrift (caption)</span></legend>
+            <table cellspacing="0">
+            	<thead>
+            		<tr>
+            			<th>Rettighed</th>
+            			<th>Virksomhed</th>
+            			<th>P-enhed</th>
+            		</tr>
+            	</thead>
+            	<tbody>
+            		<tr>
+            			<td>Må se personfølsomme data</td>
+            			<td>Bane Danmark</td>
+            			<td>Bygade 34, 2300</td>
+            		</tr>
+            	</tbody>
+            </table>
+          </fieldset>
+        </div>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>HTML Markup</span></legend>
+<pre>
+&lt;table cellspacing="0"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Rettighed&lt;/th&gt;
+      &lt;th&gt;Virksomhed&lt;/th&gt;
+      &lt;th&gt;P-enhed&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Må se personfølsomme data&lt;/td&gt;
+      &lt;td&gt;Bane Danmark&lt;/td&gt;
+      &lt;td&gt;Bygade 34, 2300&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+          </fieldset>
+        </div>
+        <div class="hr"></div>
+        <h2>Tabel udenfor fieldset</h2>
+        <table class="table" cellspacing="0">
+          <caption>Tildeling af manglende rettighed</caption>
+          <thead>
+            <tr>
+              <th>Rettighed</th>
+              <th>Virksomhed</th>
+              <th>P-enhed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Må se personfølsomme data</td>
+              <td>Bane Danmark</td>
+              <td>Bygade 34, 2300</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>HTML markup for tabel udenfor</span></legend>
+<pre>
+&lt;table <em>class="table"</em> cellspacing="0"&gt;
+  <em>&lt;caption&gt;Tildeling af manglende rettighed&lt;/caption&gt;</em>
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Rettighed&lt;/th&gt;
+      &lt;th&gt;Virksomhed&lt;/th&gt;
+      &lt;th&gt;P-enhed&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Må se personfølsomme data&lt;/td&gt;
+      &lt;td&gt;Bane Danmark&lt;/td&gt;
+      &lt;td&gt;Bygade 34, 2300&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+          </fieldset>
+        </div>
+      </form>
+		</div>
+	</div>
+	</div>
+	<div id="footer">
+    <p>HTML Guide, Virk 3.parts løsninger <small>($Id: tables.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* Start file $Id: mitvirk.css 6606 2008-04-21 13:41:07Z jomoll $ */
+#loginform {
+	display:block;
+	margin: 8px 0;	
+}
+
+#mitvirk {
+	margin: 0;
+}
+
+#mitvirk .box h2 {
+	color: #0589b0;
+}
+
+#campaign h2 {
+	color: #7b736c;
+}
+
+#campaign h3 {
+	color: #7b736c;
+	font-size: 11px;
+}
+
+#campaign p {
+	color: #7b736c;
+	margin-bottom: 10px;
+}
+
+#campaign div.freestyle, #campaign div.box {
+	padding: 10px 10px 10px 10px;
+	border: solid 1px #d6d2d0;
+	background-image: url(../images/gbl.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	background-color: white;
+	margin: 16px 0 16px 0;
+}
+
+#mnetboxes div.freestyle {
+	padding: 10px 10px 10px 10px;
+	border: solid 1px #d6d2d0;
+	background-image: url(../images/bluegrad.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	background-color: white;
+	margin: 16px 0 16px 0;
+}
+
+
+#mitvirk .loginbox {
+	background-color: #d4edf4 !important;
+	background-image: url(../images/bb.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	padding: 10px;
+}
+
+#mitvirk .loginbox {
+	padding: 0px;
+}
+
+#mitvirk .loginbox.isLoggedIn {
+	padding: 0px 0px 5px 0px;
+}
+
+/* Hack to fix extra padding added in IE6 and IE7 */
+#mitvirk .loginbox.isOnBehalf {
+	padding: 0px 0px 1px 0px;
+}
+
+#mitvirk .box {
+	background-color: #ddf1f7;
+}
+
+#mitvirk #userinfo {
+	padding: 10px;
+}
+
+#mitvirk #login_behalf {
+	display: block;
+	padding: 0px 10px 0px 10px;
+}
+
+#mitvirk #login_behalf.isOnBehalf {
+	background-image: url(../images/onbehalf.gif);
+	background-repeat: repeat-x;
+	padding: 10px;
+}
+
+#mitvirk #login_behalf strong {
+	color: white;
+}
+
+#login_behalf select {
+	margin-bottom: 5px !important;
+}
+
+
+#mitvirk a, #mitvirk a:visited {
+	font-weight: bold;
+	font-size: 11px;
+	color: #cd5c00;
+	text-decoration: none;	
+}
+
+#mitvirk a:hover {
+	text-decoration: underline;	
+}
+
+#mitvirk .links {
+	cursor: pointer;
+	cursor: hand;
+}
+
+/* Hack to enable vertical position of list-style-image in IE6 */
+#mitvirk ul.links {
+  list-style: none !important;
+  margin: 0;
+}
+
+#mitvirk ul.links li {
+  margin: 0;
+  padding-left: 11px;
+  background-image: url(../images/list_bullets.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+}
+
+#mitvirk .logout a {
+	color: #cd5c00;
+	float:right;
+	padding-right: 20px;		
+	background-image: url(../images/logout.png);	
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+	
+#campaign strong {
+	font-size: 17px;
+	font-weight: bold;
+	color: #cd5c00;
+}
+
+.mnet .box {
+  background-image: url(../images/gbl.png) !important;
+	background-position: top left !important;
+	background-repeat: repeat-x;
+}
+
+.mnet #mitvirk .loginbox {
+  background-color: white !important;
+}
+
+.mnet h1.anon {
+	padding-left: 10px !important;
+	background-image: none !important;
+}
+
+.graydient {
+  background-image: url(../images/boxhead.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+
+}
+
+.box h2 {
+	margin:0px 0 0px 0;
+	font-size: 11px;
+}
+
+.box h3 {
+	color: #0589b0;
+	margin:10px 0 0px 0;
+	font-size: 11px;
+}
+
+.box p {
+	margin:0;
+}
+
+#mitvirk h1 {
+	padding-left: 32px;
+	background-position: 10px 4px;
+	background-repeat: no-repeat;
+	padding-bottom:2px;
+}
+
+.mnet h1.activities {
+	padding-left: 34px !important;
+	color: #0a9eb9;
+	background-image: url(../images/bcrown.gif);
+	background-position: 10px 4px;
+}
+
+.mnet #mitvirk .box {
+  background-color: white !important;
+}
+
+.mnet #mitvirk a {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.mnet #mitvirk .box strong a {
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 10px;
+  background-image: url(../images/list_bullets.gif);
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+.site-mnet #boxes strong a {
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 10px;
+  background-image: url(../images/a2.gif);
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+.site-mnet #boxes .box h2 {
+  color: #7B736C;
+}
+
+#mnetboxes h2 {
+  color: #7B736C;
+  font-size: 11px;
+}
+
+#mitvirk h1.anon {
+  background-image: url(../images/gcrown.gif);
+}
+
+#mitvirk h1.logged {
+  background-image: url(../images/bcrown.gif);
+	color: #0a9eb9;
+}
+
+#mitvirk select {
+	width: 215px;
+}
+
+#mitvirk noscript .wrapper {
+	position: relative;
+	padding-right: 6px;
+}
+
+#mitvirk noscript .wrapper input {
+	float: right;
+}

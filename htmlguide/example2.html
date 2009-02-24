@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - Eksempel, udvidet kontaktformular</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+
+<body class="virkpartner">
+
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+            <li class="menuitem selected">
+            <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+            </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+
+<div id="sidebar">
+	<div id="campaign">
+		<div class="box">
+			<h2>Relateret info</h2>
+  			  <p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+  				<ul>
+			      <li><a href="example1.html">Kontaktformular</a></li>
+            <li><a href="example2.html">Udvidet adresseformular</a></li>
+            <li><a href="example3.html">Forskellige felter</a></li>
+      		</ul>
+		</div>
+	</div>
+</div>
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">Komplet eksempel - udvidet kontaktformular</a>
+</div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+	    <ul>
+	      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+      	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+      	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+      	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+	    </ul>
+	  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To-spaltet layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+        <li><a href="example1.html">Kontaktformular</a></li>
+        <li class="selected"><a href="example2.html">Udvidet adresseformular</a></li>
+        <li><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+        		</div>
+				<div class="menuside"></div>
+      		</div>
+		<div id="content" class="center">
+			<form name="dummy_form" method="get" action="#">
+			<h2>Komplet eksempel, udvidet kontaktformular</h2>
+		  <p>Nedenfor illustreres et komplet eksempel efterfulgt af al nødvendig markup og styling for at genskabe eksemplet.</p>
+		<div class="fieldset">
+			<fieldset>
+				<legend><span>Stamdata</span></legend>
+				<label class="readonly">P-nr.:
+				<span>12345678</span></label><br/>
+				
+				<label class="readonly">Startdato:
+				<span>01-05-1993</span></label><br/>
+
+
+				<label>P-enhedens navn<span class="req">*</span><br/>
+				<input type="text" class="text" id="p_name" name="p_name" value=""/></label><br/>
+
+				<label>c/o adresse<br/>
+				<input type="text" class="text" id="address" name="address" value=""/></label><br/>
+
+				<label class="floatleft">Vejnavn<span class="req">*</span><br/>
+				<input type="text" id="address_street" name="addres_street" class="short text" value=""/></label>
+
+				<label class="floatleft">Husnr.<span class="req">*</span><br/>
+				<input type="text" id="address_number" name="address_number" class="address_number text" value=""/></label>
+
+				<label class="floatleft">Etage<br/>
+				<input type="text" id="address_floor" name="address_floor" class="address_floor text" value=""/></label>
+
+				<label class="floatleft">Side/Dør<br/>
+				<input type="text" id="address_door" name="address_door" class="address_door text" value=""/></label>
+
+				<br class="clearfix" />
+				<label class="floatleft">Postnummer og by<span class="req">*</span><br/>
+				<input type="text" id="zip" name="zip" class="short text" value=""/></label>
+				
+				<label class="floatleft">Stednavn<br/>
+				<input type="text" id="place" name="place" class="short text" value=""/></label>
+
+				<br class="clearfix" />
+				<label class="floatleft">Telefon<span class="req">*</span><br/>
+				<input type="text" id="phone" name="phone" class="short text" value=""/></label>
+				
+				<label class="floatleft">Telefax<br/>
+				<input type="text" id="telefax" name="telefax" class="short text" value=""/></label>
+
+				<br class="clearfix" />
+				<label>Email<br/>
+				<input type="text" id="email" name="email" class="text" value=""/></label>
+				<br class="clearfix" />
+			</fieldset>
+		</div>
+
+		<div class="fieldset">
+			<fieldset>
+				<legend><span>Brancheoplysninger</span></legend>
+				
+				<label>Hovedbranche<span class="req">*</span><br/>
+					<select>
+						<option value="default">Vælg hovedbranche...</option>
+						<option value="value1">2. punkt på listen</option>
+					</select>
+				</label><br/>
+				
+				<label>Bibranche<br/>
+					<select>
+						<option value="default">Vælg bibranche...</option>
+						<option value="value1">2. punkt på listen</option>
+					</select></label>
+					<br/>
+
+				<label><select>
+						<option value="default">Vælg bibranche...</option>
+						<option value="value1">2. punkt på listen</option>
+				</select></label>
+				<br/>
+				
+				<label><select>
+						<option value="default">Vælg bibranche...</option>
+						<option value="value1">2. punkt på listen</option>
+				</select></label>
+			</fieldset>
+		</div>
+
+	<p class="prevnext">
+	  <input type="button" value="Forrige" class="floatleft button prev" id="prev" name="prev" />
+	  <input type="submit" value="Næste"   class="floatright button next" id="next" name="next" />
+	</p>
+	<p>&nbsp;<br class="clearfix" /></p>
+
+		<div class="hr"></div>
+    <div class="fieldset">
+    <fieldset>
+      <legend><span>HTML Markup</span></legend>
+<pre>
+&lt;form&gt;
+&lt;div class="fieldset"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;span&gt;Stamdata&lt;/span&gt;&lt;/legend&gt;
+    
+    &lt;label class="readonly"&gt;P-nr.:
+    &lt;span&gt;12345678&lt;/span&gt;&lt;/label&gt;
+    &lt;br/&gt;
+    
+    &lt;label class="readonly"&gt;Startdato:
+    &lt;span&gt;01-05-1993&lt;/span&gt;&lt;/label&gt;
+    &lt;br/&gt;
+
+
+    &lt;label&gt;P-enhedens navn&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;input type="text" class="text" id="p_name" name="p_name" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+
+    &lt;label&gt;c/o adresse&lt;br/&gt;
+    &lt;input type="text" class="text" id="address" name="address" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+
+    &lt;label class="floatleft"&gt;Vejnavn&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;input type="text" id="address_street" name="addres_street" class="short text" value=""/&gt;
+    &lt;/label&gt;
+
+    &lt;label class="floatleft"&gt;Husnr.&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;input type="text" id="address_number" name="address_number" class="address_number text" value=""/&gt;
+    &lt;/label&gt;
+
+    &lt;label class="floatleft"&gt;Etage&lt;br/&gt;
+    &lt;input type="text" id="address_floor" name="address_floor" class="address_floor text" value=""/&gt;
+    &lt;/label&gt;
+
+    &lt;label class="floatleft"&gt;Side/Dør&lt;br/&gt;
+    &lt;input type="text" id="address_door" name="address_door" class="address_door text" value=""/&gt;
+    &lt;/label&gt;
+
+    &lt;br class="clearfix" /&gt;
+    &lt;label class="floatleft"&gt;Postnummer og by&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;input type="text" id="zip" name="zip" class="short text" value=""/&gt;
+    &lt;/label&gt;
+    
+    &lt;label class="floatleft"&gt;Stednavn&lt;br/&gt;
+    &lt;input type="text" id="place" name="place" class="short text" value=""/&gt;
+    &lt;/label&gt;
+
+    &lt;br class="clearfix" /&gt;
+    &lt;label class="floatleft"&gt;Telefon&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;input type="text" id="phone" name="phone" class="short text" value=""/&gt;
+    &lt;/label&gt;
+    
+    &lt;label class="floatleft"&gt;Telefax&lt;br/&gt;
+    &lt;input type="text" id="telefax" name="telefax" class="short text" value=""/&gt;
+    &lt;/label&gt;
+
+    &lt;br class="clearfix" /&gt;
+    &lt;label&gt;Email&lt;br/&gt;
+    &lt;input type="text" id="email" name="email" class="text" value=""/&gt;
+    &lt;/label&gt;
+    &lt;br class="clearfix" /&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;div class="fieldset"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;span&gt;Brancheoplysninger&lt;/span&gt;&lt;/legend&gt;
+    
+    &lt;label&gt;Hovedbranche&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;select&gt;
+        &lt;option value="default"&gt;Vælg hovedbranche...&lt;/option&gt;
+        &lt;option value="value1"&gt;2. punkt på listen&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;&lt;br/&gt;
+    
+    &lt;label&gt;Bibranche&lt;br/&gt;
+      &lt;select&gt;
+        &lt;option value="default"&gt;Vælg bibranche...&lt;/option&gt;
+        &lt;option value="value1"&gt;2. punkt på listen&lt;/option&gt;
+      &lt;/select&gt;&lt;/label&gt;
+      &lt;br/&gt;
+
+    &lt;label&gt;&lt;select&gt;
+        &lt;option value="default"&gt;Vælg bibranche...&lt;/option&gt;
+        &lt;option value="value1"&gt;2. punkt på listen&lt;/option&gt;
+    &lt;/select&gt;&lt;/label&gt;
+    &lt;br/&gt;
+    
+    &lt;label&gt;&lt;select&gt;
+        &lt;option value="default"&gt;Vælg bibranche...&lt;/option&gt;
+        &lt;option value="value1"&gt;2. punkt på listen&lt;/option&gt;
+    &lt;/select&gt;&lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;p class="prevnext clearfix"&gt;
+  &lt;input type="button" value="Forrige" class="floatleft button prev" id="prev" name="prev" /&gt;
+  &lt;input type="submit" value="Næste"   class="floatright button next" id="next" name="next" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;br class="clearfix" /&gt;&lt;/p&gt;
+&lt;/form&gt;
+</pre>
+      </fieldset>
+    </div>
+    
+
+
+
+			</form>
+		</div>
+	</div>
+</div>
+	<div id="footer">
+    <p>HTML Guide, Virk 3.parts løsninger <small>($Id: example2.html 5953 2008-02-08 15:06:17Z jronn $)</small></p>
+	</div>
+
+</div>
+</body>
+</html>

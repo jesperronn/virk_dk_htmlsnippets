@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - Eksempel 1, kontaktformular</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+
+<body class="virkpartner">
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+           
+      <li class="menuitem selected">
+        <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+      </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+
+		<div id="sidebar">
+			<div id="campaign">
+				<div class="box">
+					<h2>Relateret info</h2>
+  			  <p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+  				<ul>
+			      <li><a href="example1.html">Kontaktformular</a></li>
+            <li><a href="example2.html">Udvidet adresseformular</a></li>
+            <li><a href="example3.html">Forskellige felter</a></li>
+      		</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="">Komplet eksempel - Kontaktformular</a>
+</div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+	    <ul>
+	      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+      	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+      	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+      	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+	    </ul>
+	  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To-spaltet layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+      <li class="selected"><a href="example1.html">Kontaktformular</a></li>
+      <li><a href="example2.html">Udvidet adresseformular</a></li>
+      <li><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+        		</div>
+				<div class="menuside"></div>
+      		</div>
+			<div id="content" class="center">
+			  <form name="dummy_form" method="get" action="#">
+        <h2>Komplet eksempel: Kontaktformular</h2>
+	      <p>Nedenfor illustreres et komplet eksempel efterfulgt af al nødvendig markup og styling for at genskabe eksemplet.</p>
+	
+			<div class="fieldset">
+ 	     <fieldset>
+					<legend><span>Kontakt</span></legend>
+					<label>Emne<span class="req">*</span><br/>						
+					<input type="text" class="text" id="subject" name="subject" value="" /></label>
+					<br/>
+					<label>Besked<span class="req">*</span><br/>				
+					<textarea class="bigtext" id="message" name="message" cols="60" rows="10"></textarea></label>
+					<br/>
+					Kontakform<br/>
+					<label><input type="radio" value="email" id="email" name="channel" />
+					Kontakt mig per e-mail</label><br/>
+					<label><input type="radio" value="phone" id="phone" name="channel" />
+					Kontakt mig telefonisk</label><br/>
+					<label><input type="radio" value="none" id="none" name="channel" checked="checked"/>			
+					Jeg skal ikke kontaktes. Beskeden er blot til information.</label><br/>
+					<br/>
+					
+					<label>Kontakperson<span class="req">*</span><br/>						
+					<input type="text" class="text" id="person" name="person" value=""/></label><br/>
+					
+					<label>Telefon nr.<span class="req">*</span><br/>						
+					<input type="text" class="text" id="phone_number" name="phone_number" value=""/></label><br/>
+					
+					<label>E-post adresse<span class="req">*</span><br/>						
+					<input type="text" class="text" id="mail_address" name="email_address" value=""/></label><br/>
+					
+					<label><input type="checkbox" id="mail_copy" class="checkbox" value="true" name="mailcopy"  />
+					Send kopi af besked til min e-mail</label>
+					
+					<input type="hidden" name="recipient" value="info@virk.dk"/>
+ 		    </fieldset>
+			</div>
+
+      <p><input type="submit" class="button" id="submit" value="Send besked"/></p>
+  		<div class="hr"></div>
+
+<div class="fieldset">
+<fieldset>
+  <legend><span>HTML markup</span></legend>
+<pre>
+&lt;form&gt;
+&lt;div class="fieldset"&gt;
+   &lt;fieldset&gt;
+    &lt;legend&gt;&lt;span&gt;Kontakt&lt;/span&gt;&lt;/legend&gt;
+    &lt;label&gt;Emne&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;input type="text" class="text" id="subject" name="subject" value="" /&gt;
+    &lt;/label&gt;
+    &lt;br/&gt;
+    
+    &lt;label&gt;Besked&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;textarea class="bigtext" id="message" name="message" cols="60" rows="10"&gt;
+    &lt;/textarea&gt;
+    &lt;/label&gt;
+    &lt;br/&gt;
+    
+    Kontakform&lt;br/&gt;
+    &lt;label&gt;
+      &lt;input type="radio" value="email" id="email" name="channel" /&gt;
+    Kontakt mig per e-mail&lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;
+      &lt;input type="radio" value="phone" id="phone" name="channel" /&gt;
+    Kontakt mig telefonisk&lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;
+      &lt;input type="radio" value="none" id="none" name="channel" checked="checked"/&gt;
+    Jeg skal ikke kontaktes. Beskeden er blot til information.&lt;/label&gt;&lt;br/&gt;
+    &lt;br/&gt;
+    
+    &lt;label&gt;Kontakperson&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" class="text" id="person" name="person" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+    
+    &lt;label&gt;Telefon nr.&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+     &lt;input type="text" class="text" id="phone_number" name="phone_number" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+    
+    &lt;label&gt;E-post adresse&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" class="text" id="mail_address" name="email_address" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+    
+    &lt;label&gt;
+      &lt;input type="checkbox" id="mail_copy" class="checkbox" value="true" name="mailcopy" /&gt;
+      Send kopi af besked til min e-mail
+    &lt;/label&gt;
+    
+    &lt;input type="hidden" name="recipient" value="info@virk.dk"/&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+  &lt;input type="submit" class="button" id="submit" value="Send besked"/&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+</pre>
+  </fieldset>
+</div>
+
+
+
+
+			</form>
+		</div>
+	</div>
+</div>
+	<div id="footer">
+
+
+
+
+    <p>$Id: example1.html 5668 2008-01-28 11:09:50Z jronn $</p>
+					
+
+	</div>
+
+</div>
+</body>
+</html>

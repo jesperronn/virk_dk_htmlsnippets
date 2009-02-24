@@ -1,0 +1,769 @@
+/* Start file $Id: frame.css 6508 2008-04-11 15:09:43Z jomoll $ */
+body {
+	background-image: url(../images/gray.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	background-color: #d6d2cf;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+#bottom {
+	position: absolute;
+	bottom:0pt;
+}
+
+div#body {
+	clear:both;
+	margin: 16px 16px;
+	/* min-height: 100%; */
+}
+
+body.minimal {
+	background-color: #fff;
+	background-image: none;	
+}
+
+body.banner {
+	background-image: url('../images/iframe_topbar_gradient.gif') !important;
+	background-repeat: repeat-x !important;
+	background-color: white !important;
+}
+
+body.banner .logo img {
+	border:0;
+}
+
+#frame {	
+	width: 948px;
+	margin: 0px auto 0 auto;
+	background-color: white;	
+	min-height: 100%;
+	height: auto !important;
+}
+
+#header {
+	background-position: top left;
+	background-repeat: repeat-x;
+	height: 88px; /* add top margin for 116px */
+	padding: 28px 16px 0 16px;
+}
+
+.site-virk #header {
+	background-image: url(../images/blue.png);
+	background-color: #b2e0ec;
+}
+
+.site-mnet #header {
+	background-image: url(../images/mnet_head.png);
+}
+
+
+#logo {
+	font-size: 32px;
+	margin-right: 257px;
+	clear:none;
+}
+
+#logo a {
+	text-decoration:none;
+}
+
+#logo img {
+	border: 0;
+}
+
+#footer {
+	margin-top: 50px;
+	border-top: solid 1px #079dc4;
+	color: #7b736c;
+	line-height: 18px;
+	padding: 10px 16px;
+	clear:both;
+}
+
+#footer a {
+	color: #7b736c;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#searchbox {
+ 	float:right;
+	background-image: url(../images/search_top_bg.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 220px; /* add margin to 241px */
+	height: 19px; /* padding to 44px */
+	padding: 12px 10px 13px 11px;
+}
+
+input.input {
+	height: 15px;
+	padding: 2px;
+	margin: 0px;
+	background-color: white;
+	border: solid 1px #079dc4;
+	font-size: 11px;
+}
+
+#searchbox input.button {
+	height: 21px;
+	background-color: #666666;	
+	text-transform: uppercase;
+	color: white;
+	margin: 0px 0px 0px 1px;
+	padding: 0px 1px 0px 1px;
+	font-size: 11px;
+	font-weight: bold;
+	border-top: solid 1px #dddddd;
+	border-left: solid 1px #bbbbbb;
+	border-bottom: solid 1px #333333;
+	border-right: solid 1px #666666;
+	vertical-align:top;
+	line-height: 17px;
+}
+
+#searchbox input.input {
+	width: 168px;	
+}
+
+#page {	
+	padding: 0px;
+	margin-right: 256px;
+	clear: none;
+	margin-bottom: 60px;
+	min-height: 494px;
+}
+
+#pagewide {	
+	clear: none;
+}
+
+#sidebar {
+	float:right;
+	vertical-align:top;
+	width: 241px;
+	margin:0;
+	padding:0;
+}
+
+.box {
+	padding: 10px 10px 10px 10px;
+}
+
+.virkbox h1 {
+	font-weight: bold;
+	color: #a79f99;
+	height: 19px;
+	padding: 4px;
+	margin: 0px;
+	background-image: url(../images/boxhead.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+.virkbox h2 {
+	color: #0589b0;
+}
+
+.virkbox button.login {
+	background-image: url(../images/button_gradient.gif);
+	background-position: top left;
+	border: 0px;
+	height: 29px !important;
+	width: 100%;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align:center;
+}
+
+#navigator {
+	margin-right: 257px;
+	height: 26px;
+}
+
+#navigator ul {
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	display:inline;
+}
+
+#navigator ul li{
+	vertical-align: bottom;	
+	padding: 3px 9px 0px 8px;
+  height: 24px;
+	margin: 0px 0px 0px 0px;	
+  float:left;
+  list-style: none !important;
+  background-image: none !important;
+}
+
+div.actions {
+  display:inline;
+}
+
+div.list-actions {
+	display:block;
+	float:left;
+	background-color:blue;
+}
+
+#topbar {
+	clear:both;
+	height: 62px;
+}
+
+#navigator ul li div.actions{
+	display: inline;
+}
+
+#navigator ul li.selected a, #navigator ul li.selected a:visited{
+	color: #e37b00;
+}
+
+#navigator ul li.selected {
+	background-color: white;
+}
+
+#navigator a:link, #navigator a:visited, #navigator a:active  {
+	font-weight: bold;
+	color:white;
+	/* add the following rule for accessibiilty 
+	   when images are turned off */
+	/* background-color: #2da4c7; */
+	text-decoration: none;
+}
+
+#navigator a:active {
+	color: #ddd;	
+}
+
+#navigator a:hover {
+	text-decoration: underline;
+}
+
+fieldset {
+	clear:none !important;
+}
+
+.path a, .path a:visited {
+	text-decoration: none;
+	color: #cd5c00;	
+	line-height:14px;
+}
+
+.path a:hover {
+	text-decoration: underline;
+}
+
+.path {
+	line-height: 8px;
+	padding-bottom: 12px;
+}
+
+#content {
+	margin-top: 10px;
+}
+
+#content.iframe {
+  margin-top: 35px !important;
+}
+
+/* 3-pane */
+div.column {
+	float:left;
+	width: 33%;
+}
+
+div.column h2 {
+	margin-bottom:0;
+}
+
+div.column .links {
+	margin-bottom: 10px;
+}
+
+div.alphaindex .links {
+	background-image: url(../images/searchresult_head_draft.png);
+	background-position: top left;
+	background-repeat: repeat-x;	
+	margin-bottom: 10px;
+	padding-top: 6px;
+}
+
+div.alphaindex .links div.authority {
+	color: #999;
+	margin-left: 10px;	
+}
+
+
+/* frontpage */
+#topbox h2 {
+	padding-top: 25px;
+	font-size: 15px;
+	color: #7b736c;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+#first-login {
+	margin: 0 0 16px 0;
+	padding:0;
+}
+
+#firstbox {
+	padding: 13px 10px;
+	height: 69px;
+	border-top: solid 1px #dbcabf;
+	border-bottom: solid 1px #dbcabf;
+	border-left: solid 1px #dbcabf;
+	background-color: #fff7da;
+	float:left;
+	width: 620px; 
+}
+
+#firstboxarrow {
+	height:97px;
+  background-image: url(../images/msgarrow.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+#topbox {
+  background-image: url(../images/frontcrown.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;		
+  height: 180px; 
+	margin: 0;
+	padding: 0;
+  padding-right: 130px;
+}
+
+#topbox a, a.big, .mnet #mitvirk h1 a {
+	display:block;
+	font-weight: bold;
+	text-decoration:none;
+	color: #0080a5;
+  background-image: url(../images/a2.gif);
+	background-position: center left;
+	background-repeat: no-repeat;		
+	padding-left: 10px;
+}
+
+#topbox a:hover, a.big:hover {
+	text-decoration:underline;
+}
+
+#searchfront {
+  margin-right: 224px;
+  background-image: url(../images/searchfgrad.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+  border: solid 1px #bbb5b1;
+	margin-bottom: 16px;
+}
+
+#searchbar {
+    padding: 12px 10px 10px 10px;
+}
+
+#searchbar input.button {
+	height: 21px;
+	background-color: #666666;	
+	text-transform: uppercase;
+	color: white;
+	margin: 0px 0 0 6px;  /* ?? */
+	padding: 0px;
+	font-size: 11px;
+	font-weight: bold;
+	border-top: solid 1px #dddddd;
+	border-left: solid 1px #bbbbbb;
+	border-bottom: solid 1px #333333;
+	border-right: solid 1px #666666;
+	vertical-align:top;
+	line-height: 17px;
+}
+
+#searchbar input.input {
+	width: 358px;	
+	margin-bottom: 2px;
+}
+
+
+.frontrbox {
+    float:right;
+    width: 210px;    
+}
+
+.frontrbox h2 {
+	color: #7b736c;
+	font-size: 11px;
+}
+
+
+#categories {
+	height:100%;
+}
+
+#categories h2 {
+	color: #7b736c;
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+#categories table, #categories th, #categories td, #categories tbody {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align:top;
+}
+
+#categories table td {
+  padding-left: 0px !important;
+}
+
+#categories caption {
+	display:none;
+	height:0px;
+}
+
+.frontbox {
+	width: 204px; /* should be 208px (but ie6 breaks) */
+	float: left;
+	margin: 0 16px;
+	padding: 13px 0;	
+}
+
+/* this is a fix for the incorrect text on page 23 of design manual */
+#boxes .last {
+	float:right;
+	width: 198px; /* pad to 208px */
+	margin:0 !important;
+	padding-right: 10px;
+}
+
+#boxes .first {
+	width: 198px; /* pad to 208px */
+	margin: 0 !important;
+	padding-left: 10px;
+}
+
+#boxes {
+  width: auto;
+  padding:0;
+  background-image: url(../images/gbl.png);
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+.site-mnet #boxes {
+	background-image: none;		
+}
+
+#boxes .box h2 a {
+	text-decoration:none;
+}
+
+#boxes .box h2 a:hover {
+	text-decoration:underline;
+}
+
+#boxes .box h2 {
+	margin-bottom:0;
+	color: #0589B0;
+}
+
+#boxes .box p {
+	margin-top: 2px;
+	line-height:15px;
+}
+
+.header h1 {
+	padding: 4px 10px;
+	font-weight: bold;
+	color: #7b736c;
+  height: 19px;
+  margin: 0px;
+	background-image: url(../images/boxhead.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+#page h1.title {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 17px;
+	color: #7b736c;
+	
+	margin-top: 37px;
+	margin-left:0;
+	padding-left:0;
+	margin-bottom: 11px;
+}
+
+#page h1.title a {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 17px;
+	color: #7b736c;
+	text-decoration: none;
+}
+
+span.slim {	
+	font-weight: normal !important;
+}
+
+div.topline {
+	margin-bottom: 15px !important;
+}
+
+#page h1.noline {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+#page h1.intro_title {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 17px;
+	color: #7b736c;
+	margin-bottom: 10px;
+	margin-top: 32px;
+}
+
+#page .intro_title_details {
+	font-size: 14px;
+	line-height: 14px;
+	color: #7b736c;
+	padding-bottom: 14px;
+}
+
+#virktjek table {
+	width:422px;
+	margin:0px;
+	padding:0px;
+}
+
+legend a, legend a:visited {
+	display:inline !important;
+	background-image: none !important;
+	padding: 0px !important;
+}
+
+.letterlist a, .letterlist span.disabled  {
+	display: block;
+	border: solid 1px #bae3ee;
+	float:left;
+	font-weight:bold;
+	text-align: center;
+	height:16px;
+	padding-right: 3px;
+	padding-left: 3px;
+	text-decoration:none;
+	margin-left: 5px;
+}
+
+.rightlink {
+	text-align: right;
+	margin-right: 7px;
+	margin-left: auto;
+	padding-top: 5px;
+	width: 225px;
+}
+
+.rightlink a {
+  background-position: 0px 3px;
+  display: inline;
+}
+
+.letterlist span.disabled {
+	color: #ddd;
+}
+
+.letterlist a.first  {
+	margin-left: 0px !important;
+}
+
+.letterlist a, .letterlist a:visited {
+	color: #c75900;
+}
+
+.letterlist a.here, .letterlist a.here:visited {
+	border: solid 1px #0694bd;
+	background-color: #0694bd;
+	color: #fff;
+}
+
+#subnavigator {
+	height: 20px;
+	float: right;
+	width: 241px;
+}
+
+#subnavigator ul {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+#subnavigator ul li {
+	vertical-align: bottom;
+	padding: 2px 5px 0px 4px;
+	margin: 0px 0px 0px 0px;	
+  float: right;
+  list-style: none;
+  background-image: none !important;
+}
+
+#subnavigator ul li.selected {
+	font-weight:bold;
+}
+
+#subnavigator ul li a {
+	font-size: 9px !important;
+	color:white;
+	text-decoration: none;
+}
+
+#topmodules {
+	float: right;
+	position:absolute;
+	right: 0;
+	width: 500px;	
+}
+
+div.topmenus td {
+	padding: 0px;
+	margin:0px;
+	line-height:10px;	
+	border:0px;
+}
+
+#page_children h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #7B736C;
+}
+
+h2.rss {
+	background-image: url(../images/rss.jpg);
+	background-position: 0px 20px;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+h2.email {
+	background-image: url(../images/lock.gif);
+	background-position: 0px 17px;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+div.paginator {
+	margin: 5px 0px 5px 0px;
+}
+
+div.paginator a {
+	border: solid 1px #bae3ee;
+	background-color:white;
+	color:#CD5C00;
+	font-weight:bold;
+	text-decoration:none;
+	padding: 2px 5px;
+}
+
+div.paginator a:hover {
+	text-decoration:underline;
+}
+
+div.paginator .navigator a {
+	background-color: white;
+}
+ 
+div.paginator .here a, div.paginator .here a:visited {
+	color: white;
+	border: solid 1px #0694bd;
+	background-color: #0694bd;
+}
+
+div.lines {
+	border:0;
+	margin: 0;
+	padding: 1px 0;	
+	background-image: url('../images/iedotty.gif');
+	background-repeat: repeat;
+	background-position: top left;
+}
+
+hr.line {
+	margin: 0px !important;
+	font-size:0;
+	line-height: 0;
+}
+
+div.topspace {	
+	margin:0px;
+	padding:0px;
+	height: 17px;
+	margin-bottom: 9px;
+}
+
+.push-down {
+	margin-bottom: 16px !important; 
+}
+
+.freestyle p {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.freestyle p img {
+	padding: 5px;
+}
+
+/* To style functional links that need permanent styling */
+a.permanent:link, a.permanent:visited, a.permanent:active {
+  text-decoration: none;
+	color: #0080a5;
+}
+
+a.permanentnav:link, a.permanentnav:visited, a.permanentnav:active, span.permanentnav {
+  text-decoration: none;
+	color: #cd5c00;
+}
+
+#contact_container {
+	margin: 16px 0px 0px 0px;
+}
+
+#contact_container h2 {
+	color: #7B736C;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+
+#contact_container .contact_item {
+	float: left;
+	margin-right: 16px;
+	width: 200px;
+	margin-bottom: 16px;
+}
+
+/* Fixes IE6 bug which causes char duplicates in floated elements */
+/* See: http://www.positioniseverything.net/explorer/dup-characters.html */
+#contact_container #contact.contact_item {
+	margin-right: -3px;
+}

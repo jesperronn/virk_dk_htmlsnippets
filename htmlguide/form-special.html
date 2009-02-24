@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>HTML-guide - Særlige form elementer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="htmlguide">
+	<div id="frame" class="site-virk" >
+		<div id="header">
+			<div id="topbar">
+				<div id="logo">
+				<a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+		<div id="navigator">
+			<ul>
+				<li class="menuitem selected">
+					<a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+		<div id="sidebar">
+			<div id="campaign">
+				<div class="box">
+					<h2>Relateret info</h2>
+					<p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+					<ul>
+						<li><a href="example1.html">Kontaktformular</a></li>
+						<li><a href="example2.html">Udvidet adresseformular</a></li>
+						<li><a href="example3.html">Forskellige felter</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="page">
+			<div class="path">
+				<img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">Særlige form elementer</a>
+			</div>
+			<h1 class="title">HTML Guide</h1>
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+					<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+					<h2 class="toc"><a href="index.html">Indhold</a></h2>
+					<ul class="toc">
+						<li><a href="html-sidetyper.html">Sidetyper</a>
+							<ul>
+								<li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+								<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+								<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+								<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+							</ul>
+						</li>  
+					<li>Element-eksempler
+							<ul>
+								<li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+								<li><a href="form-simple.html">Simple form elementer</a></li>
+								<li class="selected"><a href="form-special.html">Særlige form elementer</a></li>
+								<li><a href="form-two-column.html">To spaltet form layout</a></li>
+								<li><a href="train.html">"Train": forløbs-indikator</a></li> 
+								<li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+								<li><a href="buttons.html">Knapper</a></li>
+								<li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+								<li><a href="text-markup.html">Tekst, brødtekst</a></li>
+								<li><a href="tables.html">Tabeller</a></li>
+							</ul>
+						</li>
+						<li>Færdige eksempler
+							<ul>
+								<li><a href="example1.html">Kontaktformular</a></li>
+								<li><a href="example2.html">Udvidet adresseformular</a></li>
+								<li><a href="example3.html">Flere kolonner</a></li>
+							</ul>
+						</li>
+						<li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+					</ul>
+					<!-- end tminclude -->
+				</div>
+				<div class="menuside"></div>
+			</div>
+			<div id="content" class="center">
+			<form name="dummy_form" method="get" action="#">
+				<h2>Særlige form elementer</h2>
+				<p>Dette eksempel illustrerer brugen af særlige form elementer</p>
+				<p>Særlige elementer kan bruges, hvor de <a href="form-simple.html">simple formularelementer</a> ikke er tilstrækkelige.</p>
+				<div class="fieldset">
+					<fieldset>
+						<legend><span>Adresse</span></legend>
+						<label class="floatleft">Vejnavn<span class="req">*</span><br/>
+    				<input type="text" id="address_street" name="addres_street" class="short text" value=""/></label>
+
+    				<label class="floatleft">Husnr.<span class="req">*</span><br/>
+    				<input type="text" id="address_number" name="address_number" class="address_number text" value=""/></label>
+
+    				<label class="floatleft">Etage<br/>
+    				<input type="text" id="address_floor" name="address_floor" class="address_floor text" value=""/></label>
+
+    				<label class="floatleft">Side/Dør<br/>
+    				<input type="text" id="address_door" name="address_door" class="address_door text" value=""/></label>
+
+    				<br class="clearfix" />
+						<label class="floatleft">Postnummer og by<span class="req">*</span><br/>
+						<input type="text" id="zip" name="zip" class="short text" value=""/></label>
+									
+						<label class="floatleft">Stednavn<br/>
+						<input type="text" id="place" name="place" class="short text" value=""/></label>
+
+						<br class="clearfix" />
+					</fieldset>
+				</div>
+
+
+				<div class="fieldset">
+					<fieldset>
+						<legend><span>Readonly felt</span></legend>
+						<label class="readonly">Readonly felt:
+						<span>Label vises med fed, værdi på samme linie</span></label><br/>
+				
+						<label class="readonly">Navn:
+						<span>Vikki Larsen</span></label><br/>
+						<br/>
+					</fieldset>
+				</div>  
+
+
+				<div class="fieldset">
+					<fieldset>
+						<legend><span>Licensaccept</span></legend>
+						<p>Bruges hvor der skal være en lang tekst på lille plads. Fx ved licensbetingelser, regler for brug, osv.</p>
+						<div class="legal_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<p>
+							<input type="submit" class="button short" name="ok" value="Accepter" id="ok" />
+							<input type="button" class="button" name="cancel" value="Annuller" id="cancel" />
+						</p>
+					</fieldset>
+				</div>
+				
+				<div class="hr"></div>
+				<h3>HTML markup til særlige elementer</h3>
+				<div class="fieldset">
+					<fieldset>
+            <legend><span>Adresse</span></legend>
+<pre>
+&lt;label class="floatleft"&gt;Vejnavn
+  &lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+  &lt;input type="text" class="<em>short</em> text" value=""/&gt;
+&lt;/label&gt;
+
+&lt;label class="floatleft"&gt;Husnr.
+  &lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+  &lt;input type="text" class="<em>address_number</em> text" value=""/&gt;
+&lt;/label&gt;
+
+&lt;label class="floatleft"&gt;Etage&lt;br/&gt;
+  &lt;input type="text" class="<em>address_floor</em> text" value=""/&gt;
+&lt;/label&gt;
+
+&lt;label class="floatleft"&gt;Side/Dør&lt;br/&gt;
+  &lt;input type="text" class="<em>address_door</em> text" value=""/&gt;
+&lt;/label&gt;
+<em>&lt;br class="clearfix" /&gt;</em>
+
+&lt;label class="floatleft"&gt;Postnummer og by
+  &lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+  &lt;input type="text" class="<em>short</em> text" value=""/&gt;
+&lt;/label&gt;
+
+&lt;label class="floatleft"&gt;Stednavn&lt;br/&gt;
+  &lt;input type="text" class="<em>short</em> text" value=""/&gt;
+&lt;/label&gt;
+<em>&lt;br class="clearfix" /&gt;</em>
+</pre>
+          </fieldset>
+        </div>
+        
+        <h3>HTML markup til read-only felter</h3>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>Readonly felt</span></legend>
+<pre>
+&lt;label <em>class="readonly"</em>&gt;Readonly felt:
+  &lt;span&gt;Label vises med fed, værdi på samme linie&lt;/span&gt;
+&lt;/label&gt;&lt;br/&gt;
+
+&lt;label <em>class="readonly"</em>&gt;Navn:
+  &lt;span&gt;Vikki Larsen&lt;/span&gt;
+&lt;/label&gt;&lt;br/&gt;
+</pre>
+          </fieldset>
+        </div>
+
+
+        <h3>HTML markup til licensaccept</h3>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>Licensaccept</span></legend>
+<pre>
+<em>&lt;div class="legal_text"&gt;</em>
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit...&lt;/p&gt;
+  &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate ...&lt;/p&gt;
+<em>&lt;/div&gt;</em>
+&lt;p&gt;
+  &lt;input type="submit" class="button short" value="Accepter"/&gt;
+  &lt;input type="button" class="button" value="Annuller"/&gt;
+&lt;/p&gt;
+</pre>
+					</fieldset>
+				</div>
+				
+				
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>HTML Guide, Virk 3.parts løsninger <small>($Id: form-special.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	</div>
+</div>
+</body>
+</html>

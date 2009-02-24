@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - Knapper</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="htmlguide">
+
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+      <li class="menuitem selected">
+        <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+      </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">Knapper</a>
+</div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+	    <ul>
+	      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+      	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+      	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+      	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+	    </ul>
+	  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To spaltet form layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li class="selected"><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+      <li><a href="example1.html">Kontaktformular</a></li>
+      <li><a href="example2.html">Udvidet adresseformular</a></li>
+      <li><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+						</div>
+				<div class="menuside"></div>
+					</div>
+			<div id="content" class="center">
+			<form name="dummy_form" method="get" action="#">
+				<h2>Knapper</h2>
+				<p>Dette eksempel illustrerer brugen af almindelige knapper i indberetninger.</p>
+				<p>Knapper anvendes typisk til afsendelse af formularer.</p>
+					<p>Der er mulighed for at anvende to varianter af knapper i Virk.dk portalen:</p>
+					<p>Den første er en standardknap, den anden kan benyttes i de tilfælde, hvor man ønsker yderligere markup eller design på knappen.</p>
+					<ol>
+						<li>&lt;input type="submit" value="Ok" class="button" /&gt; </li>
+						<li>&lt;button&gt;&lt;/button&gt;</li>
+					</ol>
+					<p>De to typer illustreres nedenfor.</p>
+					<div class="hr"></div>
+					<h2>Knapper af typen "input"</h2>
+					<div class="fieldset">
+						<fieldset>
+							<legend><span>Almindelig knap</span></legend>
+							<p><strong>Bemærk:</strong> knappen skal have tilføjet attributten: class="button" for at blive vist korrekt.</p>
+							<p><input type="submit" value="Gem" class="button"  name="id" /></p>
+							<h3>Markup for almindelig knap:</h3>
+<pre>
+&lt;p&gt;&lt;input type="submit" value="Gem" class="button short" /&gt;&lt;/p&gt;
+</pre>
+						</fieldset>
+					</div>
+					<div class="fieldset">
+						<fieldset>
+							<legend><span>Flere knapper</span></legend>
+							<p><strong>Bemærk:</strong> <em>class="short"</em> gør knappen bredere, f.eks. for at markere, at denne er den foretrukne handling, hvis der er flere knapper.</p>
+							<p>
+								<input type="submit" value="Gem" class="button floatleft short"  name="id" />
+								<input type="button" value="Annuller" class="button floatleft"  name="id" />
+							</p>
+							<br class="clearfix"/>
+							<h3>Markup for flere knapper:</h3>
+<pre>
+&lt;p&gt;
+	&lt;input type="submit" value="Gem" class="button floatleft short" /&gt;
+	&lt;input type="button" value="Annuller" class="button floatleft" /&gt;
+&lt;/p&gt;
+</pre>
+						</fieldset>
+					</div>
+					<div class="hr"></div>
+					<h2>Avancerede knapper</h2>
+					<div class="fieldset">
+						<fieldset>
+							<legend><span>Avanceret knap</span></legend>
+							<p>Elementet <em>"button"</em> benyttes for elementer, der skal styles individuelt. F.eks. elementer der bl.a. indeholder formateret tekst eller ikoner.</p>
+							<p><strong>Bemærk:</strong> Der skal sættes <em>type="submit"</em> på knappen, hvis knappen skal fungere som en standard "submit" knap.</p>
+							<button class="short" type="submit">Søg <strong>kun i</strong> denne mappe</button>
+							<h3>Markup for avanceret knap:</h3>
+<pre>
+&lt;button class="short" <em>type="submit"</em>&gt;
+	Søg &lt;strong&gt;kun i&lt;/strong&gt; denne mappe
+&lt;/button&gt;
+</pre>
+						</fieldset>
+					</div>
+				</form>  
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>HTML Guide, Virk 3.parts løsninger <small>($Id: buttons.html 4221 2007-11-27 15:32:47Z jomoll $)</small></p>
+	</div>
+</div>
+</body>
+</html>

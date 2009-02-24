@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>HTML-guide - Skabelon bred (med forløbsindikator)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="htmlguide">
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+		<div id="navigator">
+			<ul>
+      	<li class="menuitem selected">
+        	<a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+	      </li>
+    	</ul>
+		</div>
+	</div>
+	
+	<div id="body">
+
+		<div id="sidebar">
+			<div id="campaign">
+				<div class="box">
+						<h2>Hjælp til at vælge</h2>
+						<p>Sideskabelonerne kan ses samlet under <a href="html-sidetyper.html">sidetyper</a>, hvor en oversigt giver overblik over alle 4 layouttyper.</p>
+						<p>Vejledning til at implementere train og felter kan ses her: <a href="train.html">train</a> og <a href="form-special.html">særlige formelementer</a>.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="page">
+			<div class="path">
+    		<img alt='&gt;' src='images/a1.gif'/><a href="index.html"> Forside</a>
+				<img alt='&gt;' src='images/a1.gif'/><a href="html-sidetyper.html"> Sidetyper</a>
+				<img alt='&gt;' src='images/a1.gif'/><a href="#"> Skabelon bred (med forløbsindikator)</a>
+			</div>
+			<h1 class="title">Skabelon bred (med forløbsindikator)</h1>
+      <div class="hr"></div>
+      <p class="floatright">
+				<a href="images/htmlguide_train_wide.png">
+					<img src="images/htmlguide_train_wide_thumb.png" class="" alt="screenshot Skabelon bred (med forløbsindikator)" />
+				</a>
+			</p>
+      <p>Denne skabelon bruges til indberetninger, der både har behov for bredt indhold og en angivelse af forløb.</p>
+			<p>Mulige skabeloner:</p>
+      	<ul class="toc">
+        	<li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+	        <li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+	        <li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+	        <li class="selected"><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+	      </ul>
+      <div class="hr clearfix"></div>
+			<div id="content" class="">
+				<h2>HTML-vejledning til denne skabelon (Skabelon bred, med forløbsindikator)</h2>
+  			<iframe frameborder="0"
+ 					src="html-train-wide-iframed.html"
+				  width="916"
+				  height="700">
+				</iframe>
+			</div>
+		</div>
+		
+		<div class="hr"></div>
+		<h2>Markup til denne skabelon</h2>
+		<div class="fieldset">
+			<fieldset>
+				<legend><span>Eksempel på HTML markup</span></legend>
+<pre>
+  <em>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</em>
+  <em>&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da"&gt;</em>
+  &lt;head&gt;
+    &lt;title&gt;Sidens titel&lt;/title&gt;
+    &lt;link rel="stylesheet" href="<em>http://virk.dk/integration/thirdparty.css</em>" type="text/css" media="screen" /&gt;
+  &lt;/head&gt;
+  &lt;body <em>class="virkpartner"</em>&gt;
+    &lt;ol <em>class="train"</em>&gt;
+      <em>[Indhold af train]</em>
+    &lt;/ol&gt;
+	  &lt;div id="content" <em>class="train wide"</em>&gt;
+	    &lt;form&gt;
+        &lt;div class="fieldset"&gt;
+          &lt;fieldset&gt;
+            &lt;legend&gt;&lt;span&gt;<em>Overskrift til indberetning ("Stamdata" i eksemplet ovenfor)</em>&lt;/span&gt;&lt;/legend&gt;
+            <em>[...]</em>
+          &lt;/fieldset&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+			</fieldset>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<p>HTML Guide, Virk 3.parts løsninger <small>($Id: html-train-wide.html 4175 2007-11-26 22:03:14Z jronn $)</small></p>
+	</div>
+
+</div>
+</body>
+</html>
