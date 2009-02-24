@@ -1,0 +1,25 @@
+HTML snippets for building HTML to Virk.dk website (works in textmate, e-texteditor, gedit, etc)
+
+This snippet library will reflect content in the Virk HTMLguide 
+at http://xmltools2.oio.dk/virk/htmlguide/
+
+== Snippets available
+
+skel(tab)
+
+fieldset(tab)   
+float(tab)  
+
+button(tab)
+inputcheck(tab)
+inputradio(tab)
+inputtext(tab)
+select(tab)
+option(tab)
+readonly(tab)
+textarea(tab)
+
+table(tab)
+td(tab)
+th(tab)
+
