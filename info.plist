@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Project-Addons-brs</string>
+        <key>uuid</key>
+        <string>D5D22DAF-A785-4D01-B3E9-75023531C7E3</string>
+        <key>mainMenu</key>
+        <dict>
+            <key>items</key>
+            <array>
+                <string>1D821567-1FF1-4A67-8F2D-80F656A8D2C0</string>
+                <string>------------------------------------</string>
+                <string>CF7B3148-051C-46DA-A5FE-14559A66D32C</string>
+                <string>9DF87220-C926-4EA4-9D7A-3AEA9E710C58</string>
+                <string>------------------------------------</string>
+                <string>FC992BB9-5775-4C4F-9F7D-923DD42D7C29</string>
+                <string>94176598-15FB-4AFC-B1E1-513FAD9BEE02</string>
+                <string>94176598-15FB-4AFC-B1E1-513FAD9BEE03</string>
+                <string>94176598-15FB-4AFC-B1E1-513FAD9BEE01</string>
+                <string>94176598-15FB-4AFC-B1E1-513FAD9BEE04</string>
+                <string>2D156EC3-0226-457B-83A5-7CBEE18AD614</string>
+                <string>865370EE-0BF2-41A9-9DB5-D3C1133395ED</string>
+                <string>94176598-15FB-4AFC-B1E1-513FAD9BEE05</string>
+                <string>------------------------------------</string>
+                <string>43735143-0DEE-405C-A3AF-C77255AB6F00</string>
+                <string>108FA90B-C22F-47C7-8E62-4C83641F39DE</string>
+                <string>A88E0373-D66A-43C8-9A37-4A10ECAE2EAC</string>
+            </array>
+        </dict>
+    </dict>
+</plist>

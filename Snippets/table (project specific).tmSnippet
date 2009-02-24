@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>table (project specific)</string>
+        <key>uuid</key>
+        <string>43735143-0DEE-405C-A3AF-C77255AB6F00</string>
+        <key>tabTrigger</key>
+        <string>table</string>
+        <key>content</key>
+        <string>&lt;table${1: id="${2:id}"}${3: class="${4:jr_fullwidth}"} cellspacing="0"&gt;
+	&lt;caption&gt;${5:$2}&lt;/caption&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			th$0
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			td
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</string>
+        <key>scope</key>
+        <string>text.html</string>
+    </dict>
+</plist>

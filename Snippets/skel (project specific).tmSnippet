@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>XHTML skeleton (project specific)</string>
+        <key>uuid</key>
+        <string>1D821567-1FF1-4A67-8F2D-80F656A8D2C0</string>
+        <key>tabTrigger</key>
+        <string>skel</string>
+        <key>content</key>
+        <string>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da"&gt;
+&lt;head&gt;
+	&lt;title&gt;Brugeradministration &amp;rsaquo; ${1:page title}&lt;/title&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+	&lt;meta name="dc.title" lang="da" content='Brugeradministration &amp;rsaquo; $1'/&gt;
+	&lt;meta name="dc.identifier" content=''/&gt; 
+	&lt;meta name="language" content='da'/&gt;
+	&lt;meta name="dc.language" content='da'/&gt;
+	&lt;meta name="category" lang="da" content=''/&gt;
+
+
+	&lt;link rel="stylesheet" href="css/basic.css"	type="text/css" media="screen" /&gt;
+	&lt;link rel="stylesheet" href="css/forms.css"	type="text/css" media="screen" /&gt;
+	&lt;link rel="stylesheet" href="css/jr_addons.css" type="text/css" media="screen" /&gt;
+
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+
+
+	&lt;h1 class="title"&gt;${2:$1}&lt;/h1&gt;
+	&lt;div id="content"&gt; 				 
+		&lt;form action="#" method="post" &gt;
+			$0
+		&lt;/form&gt;	
+	&lt;/div&gt;	
+
+		&lt;div id="footer"&gt;
+			[$Id$]
+		&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</string>
+        <key>scope</key>
+        <string>text.html</string>
+    </dict>
+</plist>

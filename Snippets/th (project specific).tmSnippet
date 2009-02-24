@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>th (project specific)</string>
+        <key>uuid</key>
+        <string>A88E0373-D66A-43C8-9A37-4A10ECAE2EAC</string>
+        <key>tabTrigger</key>
+        <string>th</string>
+        <key>content</key>
+        <string>&lt;th&gt;&lt;a class="sortable" href="#" title="Sorter på ${1:colname}"&gt;$1&lt;/a&gt;&lt;/th&gt;
+${2:th}$0</string>
+        <key>scope</key>
+        <string>text.html</string>
+    </dict>
+</plist>

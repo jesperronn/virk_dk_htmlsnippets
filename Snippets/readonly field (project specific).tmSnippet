@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>readonly field (project specific)</string>
+        <key>uuid</key>
+        <string>865370EE-0BF2-41A9-9DB5-D3C1133395ED</string>
+        <key>tabTrigger</key>
+        <string>readonly</string>
+        <key>content</key>
+        <string>&lt;label&gt;${1:Label}:&lt;br${TM_XHTML}&gt;
+&lt;span class="readonly"&gt;${2:content}&lt;/span&gt;&lt;/label&gt;&lt;br${TM_XHTML}&gt;
+$0</string>
+        <key>scope</key>
+        <string>text.html</string>
+    </dict>
+</plist>
