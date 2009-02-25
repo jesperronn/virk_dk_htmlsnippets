@@ -65,3 +65,7 @@ I left the actual code here all of a sudden half a year ago. So chances are you 
 Developers and contributors would have to create a fork of this project (and send me pull requests). You could also ask me for commit rights directly on this project. Send me your first patch and GitHub user ID.
 
 Snippets created by Jesper Rønn-Jensen, jesperrr@gmail.com, Capgemini 2008
+
+
+License: This code is released under the [GNU LGPL license](http://creativecommons.org/license/cc-lgpl) 
+(Full details in lgpl.txt file).
