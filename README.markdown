@@ -1,29 +1,49 @@
+Virk.dk HTML snippets
+============
+
 HTML snippets for building HTML to Virk.dk website (works in textmate, e-texteditor, gedit, etc)
 
-This snippet library will reflect content in the Virk HTMLguide 
+This snippet library will reflect content in the Virk HTMLguide, currently 
 at http://xmltools2.oio.dk/virk/htmlguide/
 
-==Snippets available
+Snippets available
+------------------
 
-`skel`(tab)
+`skel`(tab) -- creates HTML skeleton in blank file. Adds correct doctype, head, body and container divs required for the virk.dk html to show correctly.
 
-`fieldset`(tab)   
-`float`(tab)  
+`fieldset`(tab)   Groups of form elements. Use where you would have used ordinary fieldsets. 
+See HTML guide &raquo; [Form grupper (fieldsets)]
+(http://xmltools2.oio.dk/virk/htmlguide/form-fieldset.html)
 
-`button`(tab)
-`inputcheck`(tab)
-`inputradio`(tab)
-`inputtext`(tab)
-`select`(tab)
-`option`(tab)
-`readonly`(tab)
-`textarea`(tab)
+`float`(tab)      ??
 
-`table`(tab)
-`td`(tab)
-`th`(tab)
+`button`(tab)     submit button and other buttons. See HTML guide &raquo;
+ [Knapper](http://xmltools2.oio.dk/virk/htmlguide/buttons.html)
 
-==Work in progress -- TODO list
+
+`inputcheck`(tab)      checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+
+`inputradio`(tab)      checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+
+`inputtext`(tab)      checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+
+`select`(tab)         checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+
+`option`(tab)         options inside a select element. See HTML guide 
+&raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+
+`readonly`(tab)       readonly element. See HTML guide 
+&raquo; [Særlige form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-special.html)
+`textarea`(tab)       textarea element. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+
+
+`table`(tab)        table element. See HTML guide &raquo; [Tabeller](http://xmltools2.oio.dk/virk/htmlguide/tables.html)
+`td`(tab)           table cell inside table row.
+`th`(tab)           table header cell inside table row.
+
+
+Work in progress -- TODO list
+-----------------------------
 
 NOTE that the current state of these snippets is quite uncomplete.
 Feel free to fill in the gaps and send me your change suggestions.
