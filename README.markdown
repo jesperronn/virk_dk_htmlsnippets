@@ -21,7 +21,7 @@ See HTML guide &raquo; [Form grupper (fieldsets)](http://xmltools2.oio.dk/virk/h
  [Knapper](http://xmltools2.oio.dk/virk/htmlguide/buttons.html)
  
 `inputcheck`(tab) -- standard checkbox with label and group     
-`inputradio`(tab) -- radio button (Not implemented) 
+`inputradio`(tab) -- radio button (Not implemented)  
 `inputtext`(tab) -- text field   
 `select`(tab) -- select element    
 `option`(tab) -- options inside a select element  
