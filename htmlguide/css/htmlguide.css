@@ -1,0 +1,30 @@
+/* Start file $Id: htmlguide.css 6508 2008-04-11 15:09:43Z jomoll $ 
+  Stylesheet here only included in the HTML Guide files 
+  Put styles below that only affects the HTML Guide
+*/
+.htmlguide em {
+  background-color: #f19536;
+	font-style: normal;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 1px;
+}
+
+.toc li.selected a{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.toc li.selected li a{
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Push headings a bit down in the htmlguide */
+div.hr {
+	margin-bottom: 16px !important;
+}
+
+div.hr.clearfix {
+  clear: both;
+}

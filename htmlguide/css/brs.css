@@ -1,0 +1,30 @@
+/* Start file $Id: brs.css 6508 2008-04-11 15:09:43Z jomoll $ */
+/* CSS classes specific for E&S system BRS (brugerrettighed system) */
+span.brs_navigation {
+	float: right;
+	text-align: right;
+	margin-right: 4px;
+	margin-top: -28px;
+}
+
+h2.brs-title {
+	margin: 0 150px 10px 0;
+} 
+
+.clearfix {
+  display: inline-block;
+  clear: both;
+}
+
+input.brs_button_action{
+  border: 0;
+  margin-left: 0;
+  padding-left: 0px!important;
+  line-height: 14px;
+  color: #0080a5;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+  cursor: hand;
+  text-align: left;
+}

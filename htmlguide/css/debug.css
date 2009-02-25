@@ -1,0 +1,18 @@
+/* Start file $Id: debug.css 3462 2007-11-09 13:47:46Z jronn $ */
+.todo {
+	border:  dashed 10px #dddddd;
+	text-align: center;
+	padding: 50px;
+	color: #dddddd;
+}
+.fieldset{
+	background:white url(http://www.andybudd.com/images/layoutgrid.png);
+}
+
+input{
+  border: 1px dashed #0c0;
+}
+
+label{
+  border: 1px dashed aqua;
+}

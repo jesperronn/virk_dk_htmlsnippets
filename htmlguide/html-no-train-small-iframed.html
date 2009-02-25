@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>HTML-guide - Skabelon (basal)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="virkpartner">
+
+
+<div id="content" class="no-train small">
+	<form name="dummy_form" method="post" action="#">
+		<div class="fieldset">
+			<fieldset>
+				<legend><span>Stamdata</span></legend>
+				<label class="readonly">P-nr.:
+				<span>12345678</span></label><br/>
+				
+				<label class="readonly">Startdato:
+				<span>01-05-1993</span></label><br/>
+				
+
+				<label>P-enhedens navn<span class="req">*</span><br/>
+				<input type="text" class="text" id="p_name" name="p_name" value=""/></label><br/>
+
+				<label>c/o adresse<br/>
+				<input type="text" class="text" id="address" name="address" value=""/></label><br/>
+
+				<label class="floatleft">Vejnavn<span class="req">*</span><br/>
+				<input type="text" id="address_street" name="addres_street" class="short text" value=""/></label>
+
+				<label class="floatleft">Husnr.<span class="req">*</span><br/>
+				<input type="text" id="address_number" name="address_number" class="address_number text" value=""/></label>
+
+				<label class="floatleft">Etage<br/>
+				<input type="text" id="address_floor" name="address_floor" class="address_floor text" value=""/></label>
+
+				<label class="floatleft">Side/Dør<br/>
+				<input type="text" id="address_door" name="address_door" class="address_door text" value=""/></label>
+
+				<br class="clearfix" />
+				<label class="floatleft">Postnummer og by<span class="req">*</span><br/>
+				<input type="text" id="zip" name="zip" class="short text" value=""/></label>
+				
+				<label class="floatleft">Stednavn<br/>
+				<input type="text" id="place" name="place" class="short text" value=""/></label>
+				<br class="clearfix" />
+
+				<label class="floatleft">Telefon<span class="req">*</span><br/>
+				<input type="text" id="phone" name="phone" class="short text" value=""/></label>
+				
+				<label class="floatleft">Telefax<br/>
+				<input type="text" id="telefax" name="telefax" class="short text" value=""/></label>
+
+				<br class="clearfix" />
+				<label>Email<br/>
+				<input type="text" id="email" name="email" class="text" value=""/></label>
+				<br class="clearfix" />
+			</fieldset>
+		</div>
+		
+		<div class="fieldset">
+			<fieldset>
+				<legend><span>Brancheoplysninger</span></legend>
+				
+				<label>Hovedbranche<span class="req">*</span><br/>
+					<select>
+						<option value="default">Vælg hovedbranche...</option>
+						<option value="value1">2. punkt på listen</option>
+					</select>
+				</label><br/>
+				
+				<label>Bibranche<br/>
+					<select>
+						<option value="default">Vælg bibranche...</option>
+						<option value="value1">2. punkt på listen</option>
+					</select></label>
+					<br/>
+
+				<label><select>
+					<option value="default">Vælg bibranche...</option>
+					<option value="value1">2. punkt på listen</option>
+				</select></label>
+				<br/>
+
+				<label><select>
+					<option value="default">Vælg bibranche...</option>
+					<option value="value1">2. punkt på listen</option>
+				</select></label>
+			</fieldset>
+		</div>
+
+	<p class="prevnext">
+	  <input type="button" value="Forrige" class="floatleft button prev" id="prev" name="prev" />
+	  <input type="submit" value="Næste"   class="floatright button next" id="next" name="next" />
+	</p>
+  </form>
+</div>
+
+</body>
+</html>

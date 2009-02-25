@@ -1,0 +1,72 @@
+.small-date {
+	font-size: 9px;
+	color:#7b736c;
+}
+
+.news-item h2 a {
+	color: #0589b0;
+}
+
+.news-item-content h2 {
+	font-size: 11px;
+}
+
+.news-item td, .news-item th{
+	border: 0;
+	padding: 0 !important;
+	margin: 0;	
+	vertical-align:top;
+}
+
+.news-item {
+	border-style: collapse;
+	border: 0;
+	margin-bottom: 14px;	
+}
+
+.news-item p, .news-item h2 {
+	margin: 0px;
+}
+
+.news-image {
+	float: left; 
+	margin-right: 10px; 
+	margin-bottom: 14px;
+	margin-top: 3px;
+	width: 104px;
+}
+
+.top-news .news-image {
+	float: left; 
+	margin-right: 13px; 
+	margin-bottom: 14px;
+	width: 208px;
+}
+
+.news-item-single {
+	position: relative;
+	
+}
+
+.news-item-single .manchet {
+	font-weight: bold;
+}
+
+.news-item-single img {
+	float: right;
+	margin-top: 5px;
+}
+
+.news-item-single .with_image {
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+/* IE6/7 cuts beginning of lists, so we need to position them a bit to the right */
+.manchet ol {
+	margin-left: 15px !important;
+}
+
+.manchet ul {
+	margin-left: 3px !important;
+}

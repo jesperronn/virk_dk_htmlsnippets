@@ -1,0 +1,436 @@
+/* Start file $Id: search.css 6508 2008-04-11 15:09:43Z jomoll $ */
+.FastSearchTitle {
+	color:#0589B0;
+	font-size:13px;
+	font-weight:bold;
+	padding-left: 30px;
+}
+
+.FastSearchTitle a {
+	color:#0589B0;
+}
+
+.FastSearchTeaser {
+	color: #000000;
+	padding-left: 22px;
+}
+
+.FastSearchTeaser a {
+	color:#000000;
+}
+
+.FastSearchAuthority {
+	color:#7B736C;
+	padding-left: 22px;
+}
+
+.FastSearchAuthority a {
+	color:#7B736C;
+}
+
+.FastSearchResultPaging {
+	height: 21px;
+	padding-top: 10px;	
+	padding-bottom: 16px;
+	clear: left;
+}
+
+.FastSearchResultPaging a.here, .FastSearchResultPaging a.here:visited {
+	background-color:#0694BD;
+	border:1px solid #0694BD;
+	color:#FFFFFF;
+}
+.FastSearchResultPaging a, .FastSearchResultPaging a:visited {
+	color:#C75900;
+}
+.FastSearchResultPaging a.first {
+	margin-left:0px !important;
+}
+
+.FastSearchResultPaging a.nonsolid, .FastSearchResultPaging a.nonsolid:visited {
+	border: none;
+}
+
+.FastSearchResultPaging a.ghost, .FastSearchResultPaging a.ghost:visited, .FastSearchResultPaging a.ghost:hover {
+	color:#888888;
+	text-decoration: none;
+}
+
+.FastSearchResultPaging a {
+	border:1px solid #BAE3EE;
+	display:block;
+	float:left;
+	font-weight:bold;
+	height:16px;
+	margin-right:4px;
+	text-align:center;
+	text-decoration:none;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.searchmain {
+	background-color: white;	
+	/* total width = 656px */
+  border-left:  solid 1px #bbb5b1;
+  border-right: solid 1px #bbb5b1;
+  margin: 0;
+  padding: 0;
+}
+
+.searcharea {
+  padding: 11px 8px 15px 8px;
+	margin: 0;
+	background-image: url(../images/searchgrad_top.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	background-color: #e8f5f9;
+}
+
+form.formula_search {
+  margin: 0px 0px 0px 3px;
+  padding: 0;
+}
+
+.searchbottom {
+  padding: 8px 4px 8px 8px;
+  margin: 0;
+	background-image: url(../images/searchgrad_bottom.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+  height: 130px; /* IE hack */
+}
+
+.searchbottom.none_results {
+  height: 50px !important; 
+}
+
+.searchmain input.input {
+	width: 372px;
+}
+
+.searchmain input.button {
+	height: 21px;
+	background-color: #666666;	
+	text-transform: uppercase;
+	color: white;
+	margin: 0px 0 0 6px;
+	padding: 0px;
+	font-size: 11px;
+	font-weight: bold;
+	border-top: solid 1px #dddddd;
+	border-left: solid 1px #bbbbbb;
+	border-bottom: solid 1px #333333;
+	border-right: solid 1px #666666;
+	vertical-align:top;
+	line-height: 17px;
+}
+
+.searchform {
+	height: 42px;
+}
+
+.searchformicons {
+	float: right;
+	width: 135px;
+}
+
+.searchformicon {
+	text-decoration: none;
+	padding-left: 20px; 	
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+}
+
+.searchlinks {
+	margin-top: 6px;
+}
+.searchlinks .searchformicon {
+	display: inline; 	
+	padding-bottom: 6px !important;
+}
+
+.searchlinks .searchformicon a {
+	display: inline; 	
+	font-size: 11px;
+}
+
+.searchformicon a {
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.searchformicon a:visited {
+	color:#0589B0;
+}
+
+#FastSearchRadio {
+  margin-top: 10px;
+  height: 20px;
+}
+
+#FastSearchRadio a {
+	text-decoration: none;
+}
+
+#FastSearchRadio input {
+	height: 13px !important;
+	float: left;
+}
+
+#FastSearchRadio label {
+	float: left;
+	display: block;
+	margin-right: 10px;
+}
+
+#FastSearchRadio label a.information {
+	background-image: url(../images/type_information.gif);
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	display: block;
+}
+
+#FastSearchRadio label a.formula {
+	background-image: url(../images/type_formula.gif);
+	background-position: 0px 2px;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	display: block;
+}
+
+.helpicon {
+	background-image: url(../images/help_draft.png);
+}
+
+.alphabeticon {
+	background-image: url(../images/alphabet_draft.png);
+}
+
+.showallicon {
+	background-image: url(../images/type_formula.gif);
+}
+
+.searchnavigators {
+	margin: 0;
+	width: 99%;
+}
+
+.searchnavigator {
+	width: 204px;
+	float:left;
+	padding-left: 3px;
+}
+
+h2.autcom, h2.key {
+	color: #7B736C;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 17px;
+	border: none;
+	display:inline;
+	margin: 0px 0px 4px 3px;
+}
+
+h2.key {
+	width: 212px;
+	float: left;
+}
+
+h2.autcom {
+	float: left;
+	width: 420px;
+}
+
+.searchnavigator .path {
+	border: 0;
+	margin: 0;	
+	padding: 0;
+	height: 15px;
+}
+
+.searchnavigator .path a {
+	background-image: url(../images/navigator_back_draft.png);
+	background-repeat: no-repeat;
+	padding-left: 20px;	
+	color: #000;
+}
+
+.searchnavigator .options {
+	display: block;
+	overflow: auto;	
+	height: 92px;
+	background-color: white;
+	border: solid 1px #ddd;
+}
+
+.searchnavigator .options ul {
+	padding:0;
+	border:0;
+	margin:0;
+	list-style-position: outside;
+	list-style-type: none;
+	list-style-position: 0;
+	list-style-image: none;
+	background-image: none !important;
+}
+
+.searchnavigator .options li {
+	padding: 1px 0 0 1px;
+	border: 0;
+	margin: 0;
+	line-height: 12px;
+	background-image: none !important;
+}
+
+.searchnavigator .options li a {
+	text-decoration: none;	
+	line-height: 12px;
+	white-space: nowrap;		
+}
+
+.searchnavigators .aut {
+	margin: 0 8px;	
+}
+
+#FastSearchResultRadio {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+ul.searchresult li {
+	padding:0;
+	background-image: url(../images/searchresult_head_draft.png);
+	background-position: top left;
+	background-repeat: repeat-x;	
+	margin-bottom: 10px;
+}
+
+ul.searchresult strong {
+	font-weight: normal;	
+}
+
+ul.searchresult li.myndighed {
+	padding: 10px 10px 10px 0;
+	border: solid 1px #ddd;
+	background-image: none;
+	margin-bottom: 10px;
+}
+
+ul.searchresult li.indberetning h2 {
+	background-image: url(../images/type_formula.gif);
+	background-position: 12px 2px;
+	background-repeat: no-repeat;	
+}
+
+ul.searchresult li.information h2 {
+	background-image: url(../images/type_information.gif);
+	background-position: 12px 2px;
+	background-repeat: no-repeat;	
+}
+
+ul.searchresult li.external h2 {
+	background-image: url(../images/type_information.gif);
+	background-position: 12px 2px;
+	background-repeat: no-repeat;	
+}
+
+
+ul.searchresult li.indberetning a,
+ul.searchresult li.information a,
+ul.searchresult li.external a
+{
+	padding-left: 32px; 
+}
+
+ul.searchresult li.myndighed img {
+	height: 60px;
+	width: 206px;
+}
+
+ul.searchresult li.myndighed a {
+	background-image: none !important;	
+}
+
+ul.searchresult li.myndighed h2, ul.searchresult li.myndighed p
+{
+}
+
+ul.searchresult h2 {
+	margin:0;
+}
+ul.searchresult p {
+	margin:0 0 0 10px;	
+	
+}
+
+ul.searchresult div.authority {
+	margin-left:10px;	
+	color: #999999;
+}
+
+#FastSearchResultList {
+  width: 656px;
+}
+
+#FastSearchResultList ul {
+	list-style-image: none;
+	list-style-type: none;
+	margin-left: 0px;
+	margin-top: 10px;	
+}
+
+div.form {
+	background-image: url(../images/bluegrad.png);
+	background-position: 10px 0px;
+	background-repeat: no-repeat;
+}
+
+div.info {
+	background-image: url(../images/searchresult_info_draft.png);
+	background-position: 10px 0px;
+	background-repeat: no-repeat;
+}
+
+div.searchintro {
+	margin: 0px 0px 8px 3px;
+}
+
+span.searchdidyoumean {
+	display: block;
+	margin-bottom: 8px;	
+}
+
+span.newwindow {
+	font-weight: normal;
+	color: #7b736c;		
+}
+
+h1.searchtitle {
+	font-size: 14px;
+	line-height: 21px;
+	color: #7b736c;
+	font-weight: normal;
+	margin: 19px 0px 2px 0px;
+}
+
+h2.searchtitle {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 17px;
+	color: #7b736c;	
+	margin-left:0;
+	padding-left:0;
+	margin-bottom: 11px;
+}
+
+span.navigator a {
+  border: none;
+}
+
+div#filterlist p {
+	margin: 10px 0px 0px 0px;
+	padding: 0;
+}

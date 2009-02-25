@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - Eksempel 3, Forskellige felter</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+
+<body class="virkpartner">
+
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+            <li class="menuitem selected">
+            <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+            </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+
+
+
+<div id="sidebar">
+
+			<div id="campaign">
+				<div class="box">
+					<h2>Relateret info</h2>
+  			  <p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+  				<ul>
+			      <li><a href="example1.html">Kontaktformular</a></li>
+            <li><a href="example2.html">Udvidet adresseformular</a></li>
+            <li><a href="example3.html">Forskellige felter</a></li>
+      		</ul>
+				</div>
+			</div>
+</div>
+
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">komplet eksempel - Forskellige felter</a>
+</div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+	    <ul>
+	      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+      	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+      	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+      	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+	    </ul>
+	  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To-spaltet layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+        <li><a href="example1.html">Kontaktformular</a></li>
+        <li><a href="example2.html">Udvidet adresseformular</a></li>
+        <li class="selected"><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+        		</div>
+				<div class="menuside"></div>
+      		</div>
+			<div id="content" class="center">
+			<form name="dummy_form" method="get" action="#">
+      <h2>Komplet eksempel: Forskellige felter </h2>
+      <p>Nedenfor illustreres et komplet eksempel efterfulgt af al nødvendig markup og styling for at genskabe eksemplet.</p>
+			<p>Her kan du tilføje eller rette i stamdata.</p>
+	
+			<div class="fieldset">
+				<fieldset>
+					<legend><span>Alm. felter (fuld bredde)</span></legend>
+					<label class="readonly">Readonly felt:
+					<span>Label vises med fed, værdi på samme linie</span></label><br/>
+					
+					<label class="readonly">Navn:
+					<span>Vikki Larsen</span></label><br/>
+					<br/>
+	
+					<label>Normalt tekst felt <br/>
+					<input type="text" class="text" id="email" name="email" value="Tekst inde i feltet"/></label><br/>
+	
+					<label>Select felt<span class="req">*</span><br/>
+					<select>
+						<option value="val">Vælg fra listen</option>
+						<option value="val">2. punkt på listen</option>
+					</select></label><br/>
+					
+					<label>Textarea<span class="req">*</span><br/>
+					<textarea name="textarea" id="textarea" rows="4" cols="70"></textarea></label><br/>
+					
+	
+					
+					<p>Vælg blandt følgende:<br/>
+					<label><input type="checkbox" id="virk_admin" name="virk_admin"  checked="checked"/> Virk administrator</label><br/>
+	
+					<label><input type="checkbox" id="deaktiveret" name="deaktiveret" /> Deaktiveret (bemærk: en deaktiveret bruger kan ikke logge på systemet)</label><br/>
+	</p>
+	
+	<p >Vælg en af følgende:<span class="req">*</span><br/>
+			<label><input type="radio" id="v1" name="group_name"/> Enten denne radioknap</label><br/>
+			<label><input type="radio" id="v2" name="group_name"/> Eller denne </label><br/>
+	</p>		
+		
+		<br class="clearfix"/>	
+			
+				</fieldset>
+				</div>
+
+
+		<button type="submit" class="floatleft short" name="save" id="save">Gem</button>
+		<input type="reset" value="Annuller" class="floatleft button" id="cancel" name="cancel" /><br/>
+		<br class="clearfix" />
+
+<div class="hr"></div>
+<div class="fieldset">
+<fieldset>
+  <legend><span>HTML markup</span></legend>
+<pre>
+&lt;form&gt;
+&lt;p&gt;Her kan du tilføje eller rette i stamdata.&lt;/p&gt;
+
+&lt;div class="fieldset"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;span&gt;Alm. felter (fuld bredde)&lt;/span&gt;&lt;/legend&gt;
+    &lt;label class="readonly"&gt;Readonly felt:
+    &lt;span&gt;Label vises med fed, værdi på samme linie&lt;/span&gt;&lt;/label&gt;&lt;br/&gt;
+    
+    &lt;label class="readonly"&gt;Navn:
+    &lt;span&gt;Vikki Larsen&lt;/span&gt;&lt;/label&gt;&lt;br/&gt;
+    &lt;br/&gt;
+
+    &lt;label&gt;Normalt tekst felt &lt;br/&gt;
+    &lt;input type="text" class="text" id="email" name="email" value="..."/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+
+    &lt;label&gt;Select felt&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;select&gt;
+      &lt;option value="val"&gt;Vælg fra listen&lt;/option&gt;
+      &lt;option value="val"&gt;2. punkt på listen&lt;/option&gt;
+    &lt;/select&gt;&lt;/label&gt;&lt;br/&gt;
+    
+    &lt;label&gt;Textarea&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;textarea name="textarea" id="textarea" rows="4" cols="70"&gt;&lt;/textarea&gt;
+    &lt;/label&gt;&lt;br/&gt;
+
+    
+    &lt;p&gt;Vælg blandt følgende:&lt;br/&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" id="virk_admin" name="virk_admin"  checked="checked"/&gt;
+      Virk administrator
+    &lt;/label&gt;&lt;br/&gt;
+
+    &lt;label&gt;
+      &lt;input type="checkbox" id="deaktiveret" name="deaktiveret" /&gt; 
+      Deaktiveret (bemærk: en deaktiveret bruger kan ikke logge på systemet)
+    &lt;/label&gt;&lt;br/&gt;
+    &lt;/p&gt;
+  
+    &lt;p &gt;Vælg en af følgende:&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+    &lt;label&gt;
+      &lt;input type="radio" id="v1" name="group_name"/&gt; Enten denne radioknap
+    &lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;
+      &lt;input type="radio" id="v2" name="group_name"/&gt; Eller denne 
+    &lt;/label&gt;&lt;br/&gt;
+    &lt;/p&gt;
+  
+  &lt;br class="clearfix"/&gt;	
+
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+  </fieldset>
+</div>
+
+
+		</form>
+		</div>
+	</div>
+</div>
+	<div id="footer">
+    <p>HTML Guide, Virk 3.parts løsninger <small>($Id: example3.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	</div>
+
+</div>
+</body>
+</html>

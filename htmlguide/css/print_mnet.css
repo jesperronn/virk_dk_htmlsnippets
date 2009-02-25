@@ -1,0 +1,107 @@
+#topbar, #subnavigator, #navigator, #searchbox, #logo, #footer, #bottom, #sidebar, .tools, .hr, .notificationbox, #jahiapanel {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+	background: white;
+	line-height: 11pt !important;
+}
+
+h1.title {
+  font-size: 13pt !important; /* Pts are okay, because we print them */
+  line-height: 13pt !important;
+  color: #bbbbbb !important;
+}
+
+h2 {
+  font-family: Verdana;
+  font-size: 10pt !important; /* Pts are okay, because we print them */
+  line-height: 10pt !important;
+}
+
+h3 {
+  font-family: Verdana;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 9pt !important;
+}
+
+/* Hack, to trick the browser to print another logo */
+#header {
+  display: list-item; 
+  list-style-image: url(../images/logo_print.gif); 
+  list-style-position: inside;
+	margin: 0 !important;
+  padding: 0 !important;
+	height: 50pt;
+}
+
+/* Style breadcrumb different */
+.path {
+  border-top: 1px solid #bbb;
+  padding-top: 5px;
+  margin-top: 70px;
+}
+
+div.paginator a, div.paginator .here a, div.paginator .here a:visited {
+	border: none;
+	text-decoration: none !important;
+	font-size: 9pt !important;
+}
+
+#content {
+  width: auto;
+	border: 0;
+	color: black; 
+	background: transparent;
+	font-family: Verdana !important;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 9pt !important;
+}
+
+#content p {
+  color: black; 
+	background: transparent;
+	font-family: Verdana;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 11pt;
+}
+
+#content ul, #content ol {
+  list-style-image: none;
+  list-style-position: inside;
+}
+
+#content li {
+  font-family: Verdana;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 9pt !important;
+  margin-bottom: 3pt !important;
+}
+
+/* Handle link behaviour */
+#content a {
+	color: #079dc4;
+	background: transparent;
+  font-size: 8pt !important;
+	text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #bbb !important;
+}
+
+#content table, #content td, #content th, #content tr {
+  border: 0;
+}
+
+#authorityInfo h2 {
+  padding-left: 0 !important;
+  font-size: 8pt !important;
+}
+
+#menu a {
+	color: #079dc4;
+	background: transparent;
+  font-size: 8pt !important;
+}

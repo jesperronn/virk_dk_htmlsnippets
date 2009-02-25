@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - &quot;Train&quot; forløbsindikator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body class="htmlguide">
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+            <li class="menuitem selected">
+            <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+            </li>
+    </ul>
+		</div>
+	</div>
+	<div id="body">
+
+		<div id="page">
+			<div class="path">
+    <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="train.html">&quot;Train&quot; - forløbsindikator</a></div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+    <ul>
+      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+    	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+    	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+    	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+    </ul>
+  </li>  
+<li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To spaltet form layout</a></li>
+      <li class="selected"><a href="train.html">"Train" - forløbsindikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+      <li><a href="example1.html">Kontaktformular</a></li>
+      <li><a href="example2.html">Udvidet adresseformular</a></li>
+      <li><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+        		</div>
+				<div class="menuside"></div>
+      	</div>
+			<div id="content" class="center">
+        <h2>&quot;Train&quot; - forløbsindikator</h2>
+        <p>Dette eksempel illustrerer brugen af en forløbsindikator - også kaldet et "train".</p>
+        <p>Nedenfor er vist et eksempel på et train, der dog i dette tilfælde står alene (ikke ved siden af en indberetning). Se evt. <a href="html-sidetyper.html">sidetyper</a> for fuldt illustrerede eksempler.</p>
+        <p><strong>Bemærk:</strong> Forløbsindikatoren vises ikke i sit fulde layout i browseren Internet Explorer 6, da det grundet fejl og mangler i browseren ikke er muligt at skabe dette layout. Konkret betyder dette at "pilene", der visuelt leder fra et trin til det næste ikke vises i Internet Explorer 6. Internet Explorer 7 viser indikatoren korrekt.</p>        
+        <div class="hr"></div><br/>
+        <ol class="train">
+          <li class="done" id="step1">Første step<b class="tip"></b></li>
+          <li class="done" id="step2">Andet step<b class="tip"></b></li>
+          <li class="current" id="step3">Tredie step
+            <p>This one has extra text that can only be seen when selected</p>
+            <p>Extra paragraph of text</p>
+            <b class="tip"></b>
+          </li>
+          <li class="undone" id="step4">Fjerde step<b class="tip"></b></li>
+          <li class="undone" id="step5">Femte step<b class="tip"></b></li>
+          <li class="undone final" id="step6">Sidste step<b class="tip"></b></li>
+        </ol>
+        <div class="clearfix"></div>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>HTML Markup</span></legend>
+<pre>
+&lt;ol class="train"&gt;
+  &lt;li <em>class="done"</em>&gt;Første step &lt;b class="tip"&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li <em>class="done"</em>&gt;Andet step&lt;b class="tip"&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li <em>class="current"</em>&gt;Tredie step
+    &lt;p&gt;This one has extra text that can only be seen when selected&lt;/p&gt;
+    &lt;p&gt;Extra paragraph of text&lt;/p&gt;
+    &lt;b class="tip"&gt;&lt;/b&gt;
+  &lt;/li&gt;
+  &lt;li <em>class="undone"</em>&gt;Fjerde step&lt;b class="tip"&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li <em>class="undone"</em>&gt;Femte step&lt;b class="tip"&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li <em>class="undone final"</em>&gt;Sidste step&lt;b class="tip"&gt;&lt;/b&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+          </fieldset>
+        </div>
+    	</div><!--id="content" -->
+    </div><!--id="page" -->
+	  <div id="footer">
+      <p>HTML Guide, Virk 3.parts løsninger <small>($Id: train.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	  </div>
+  </div><!--id="body" -->
+</div><!--id="frame" -->
+</body>
+</html>

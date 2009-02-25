@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+  <title>Virk.dk - Simple form elementer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="frame" class="site-virk">
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+			  <a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>	
+		<div id="navigator">
+		  <ul>
+        <li class="menuitem selected">
+          <a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+        </li>
+      </ul>
+		</div>
+	</div>
+	<div id="body">
+	  <div id="sidebar">
+	    <div id="campaign">
+  		  <div class="box">
+  			  <h2>Relateret info</h2>
+  			  <p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+  				<ul>
+  					<li><a href="example1.html">Eksempel på kontaktformular</a></li>
+  					<li><a href="example2.html">Udvidet adresseformular</a></li>
+  					<li><a href="example3.html">Eksempel 3</a></li>
+  				</ul>
+  			</div>
+  		</div>
+	  </div>
+	  <div id="page">
+  	  <div class="path">
+        <img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="form-simple-html">Simple form elementer</a>
+      </div>
+  		<h1 class="title">HTML guide</h1>
+  		<div id="menu">
+  		  <div class="menuside"></div>
+  		  <div class="menucenter">
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+	    <ul>
+	      <li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+      	<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+      	<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+      	<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+	    </ul>
+	  </li>  
+  <li>Element-eksempler
+    <ul>
+      <li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+      <li class="selected"><a href="form-simple.html">Simple form elementer</a></li>
+      <li><a href="form-special.html">Særlige form elementer</a></li>
+      <li><a href="form-two-column.html">To spaltet form layout</a></li>
+      <li><a href="train.html">"Train": forløbs-indikator</a></li> 
+      <li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+      <li><a href="buttons.html">Knapper</a></li>
+      <li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+      <li><a href="text-markup.html">Tekst, brødtekst</a></li>
+      <li><a href="tables.html">Tabeller</a></li>
+    </ul>
+  </li>
+  <li>Færdige eksempler
+    <ul>
+      <li><a href="example1.html">Kontaktformular</a></li>
+      <li><a href="example2.html">Udvidet adresseformular</a></li>
+      <li><a href="example3.html">Forskellige felter</a></li>
+    </ul>
+  </li>
+  <li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+<!-- end tminclude -->
+        </div>
+  			<div class="menuside"></div>
+      </div>
+		  <div id="content" class="center">
+      <form name="dummy_form" method="get" action="#">
+		    <h2>Simple form elementer</h2>
+        <p>Dette eksempel illustrerer brugen af simple form elementer</p>
+        <p>Simple elementer i formularer er generelt i fuld bredde og et-spaltet layout. Se eventuelt også <a href="form-special.html" >særlige form elementer</a> og <a href="form-two-column.html">to-spaltet form layout</a>.</p>
+        <div class="fieldset">
+          <fieldset>
+            <legend><span>Standard felter</span></legend>
+            <label>Tekst felt<br/>
+            <input type="text" id="t1" name="t1" class="text" value=""/></label><br/>
+            <label>Selectbox<br/>
+            <select id="selectbox" name="selectbox" class="">
+              <option value="0">vælg fra listen</option>
+              <option value="1">værdi 1</option>
+            </select></label><br/><br/>
+          
+            Radioknapper<span class="req">*</span> <br/>
+            <label><input type="radio" id="r1" name="radio_group" checked="checked"/> Enkeltmandsvirksomhed</label><br/>
+            <label><input type="radio" id="r2" name="radio_group"/> Anpartsselskab</label><br/><br/>
+  
+            Checkbokse<br/>
+            <label><input type="checkbox" id="id1" name="id1"/> Tilsend nyhedsbrev</label><br/>
+            <label><input type="checkbox" id="id2" name="id2"/> Abbonner på nyt om virksomheden</label><br/>
+            <br/>
+            <label>Textarea<br/>
+              <textarea name="Name" id="Name" class="bigtext" rows="4" cols="40"></textarea>
+            </label><br/>
+          </fieldset>
+        </div>
+        <div class="hr"></div>
+        <h2>HTML markup til disse eksempler</h2>
+        <div class="fieldset">
+          <fieldset>
+  	        <legend><span>HTML markup for de to fieldsets</span></legend>
+<pre>
+&lt;div class="fieldset"&gt;
+  &lt;label&gt;Tekst felt&lt;br/&gt;
+  &lt;input type="text" class="text" value=""/&gt;&lt;/label&gt;&lt;br/&gt;
+  &lt;label&gt;Selectbox&lt;br/&gt;
+    &lt;select class=""&gt;
+      &lt;option value="0"&gt;vælg fra listen&lt;/option&gt;
+      &lt;option value="1"&gt;værdi 1&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;&lt;br/&gt;&lt;br/&gt;
+  Radioknapper&lt;span class="req"&gt;*&lt;/span&gt; &lt;br/&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="radio_group" checked="checked"/&gt;
+    Enkeltmandsvirksomhed
+  &lt;/label&gt;&lt;br/&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="radio_group"/&gt; Anpartsselskab
+  &lt;/label&gt;&lt;br/&gt;
+  &lt;br/&gt;
+  Checkbokse&lt;br/&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox"/&gt; Tilsend nyhedsbrev
+  &lt;/label&gt;&lt;br/&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox"/&gt; Abbonner på nyt om virksomheden
+  &lt;/label&gt;&lt;br/&gt;
+  &lt;br/&gt;
+  &lt;label&gt;Textarea&lt;br/&gt;
+    &lt;textarea class="bigtext" rows="4" cols="40"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;&lt;br/&gt;
+&lt;/div&gt;  
+</pre>
+          </fieldset>
+	      </div>
+	      </form>
+      </div>
+	  </div>
+	  <div id="footer">
+      <p>HTML Guide, Virk 3.parts løsninger <small>($Id: form-simple.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	  </div>
+	</div>
+</div>
+</body>
+</html>

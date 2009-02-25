@@ -1,0 +1,240 @@
+/* Start file $Id: admin.css 6508 2008-04-11 15:09:43Z jomoll $ */
+#jahiapanel a{
+	clear:right;
+	z-index: 10;
+}
+
+.edit #topbox {
+	 height: auto;
+}
+
+#jahiapanel {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	background-color: #e4e4e4;
+	padding: 10px;
+	text-align: right;
+}
+
+#toplinks .tab ul {
+	margin:0; padding:0;
+}
+
+#toplinks .tab li{	
+	text-align:right;
+	list-style-type: none !important;
+	list-style-image: none !important;
+	background-image: none  ;
+  display: block;
+	margin:0;
+	padding:0;
+}
+
+li#mode-live {
+	height: 48px;
+	background-image: url(../images/actions/live.png) !important;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+li#mode-edit {
+	height: 48px;
+	background-image: url(../images/actions/edit.png) !important;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+li#mode-preview {
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 24px;
+}
+
+li#mode-compare {
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 24px;
+}
+
+#toplinks li#mode-live span,
+#toplinks li#mode-edit span {
+	font-size: 24px;	
+	line-height:24px;
+}
+
+#toplinks li#mode-preview span,
+#toplinks li#mode-compare span
+ {
+	font-size: 16px;	
+}
+
+
+#toplinks .tab li a {
+  padding-left: 0px;
+	display:block;
+	width: 100%;
+	text-decoration:none;
+}
+
+#toplinks .tab li.selected {
+	font-weight: bold;
+}
+
+#toplinks .tab li a:hover {
+	text-decoration:underline;
+}
+
+.example {
+	color: #cccccc;
+}
+
+.example, .example h1, .example h2 .example p {
+	color: #aaaaaa !important;
+}
+
+.guide, .guide h1, .guide h2 .guide p {
+	color: #0589b0 !important;
+}
+
+.diacontent {
+  background-image: url(../images/example_dia.png);
+	background-position: 0px 0px;
+	background-repeat: repeat;
+}
+
+.frontcontent {
+  background-image: url(../images/example.png);
+	background-position: 0px 0px;
+	background-repeat: repeat;
+}
+
+.edit #subnavigator {
+	width: 241px !important;
+	height: 40px !important;	
+}
+
+.edit #header {
+	height: auto !important;	
+}
+
+.edit .menuitem {
+	background-color:#219dc2 !important;		
+}
+
+.site-mnet.edit .menuitem {
+	background-color: #7B736C !important;		
+}
+
+.edit #subnavigator ul li {
+		padding: 2px 1px 0px 1px;
+}
+
+.stripes {
+	border: 1px dashed #dddddd;
+	background-image: url(../images/stripes.gif);	
+}
+
+.controlpanel {
+	margin-bottom: 16px;
+	padding: 10px;
+	border: 1px dashed #dddddd;
+	background-image: url(../images/stripes.gif);
+}
+
+.controlpanel .top {
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+	border-bottom: 2px dashed #dddddd;
+}
+
+.controlpanel h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #7B736C;
+}
+
+.controlpanel h3 {
+	font-size: 11px;
+	font-weight: bold;
+	color: #000;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.controlpanel .type {
+	font-size: 13px;
+	font-weight: bold;
+	color: #CD5C00;
+}
+
+.controlpanel .icon {
+	float: right;
+	margin-right: -7px;
+	margin-top: -12px;
+}
+
+.controlpanel.mail {
+	background-color: #fea84d;
+	background-image: none !important;
+	margin: 16px 0;
+	padding: 10px;
+}
+
+.controlpanel.mail .validation_error {
+  color: #f00;
+  font-weight: bold;
+}
+
+.edit .intropage {
+	margin-top: -10px;
+}
+
+.edit #subnavigator ul li {
+	padding: 2px 1px 0px 1px;
+}
+
+#page_children {
+	clear: both;
+	padding: 10px;
+	border: 1px dashed #dddddd;
+	background-image: url(../images/stripes.gif);
+}
+
+.edit .letterlist a, .edit .letterlist span.disabled  {
+	display: inline;
+	border: 0;
+	font-weight:bold;
+	text-align: center;
+	text-decoration:none;
+	width: auto;
+	float:none;
+	padding-right: 0px;
+	padding-left: 0px;
+	text-decoration:none;
+	margin-left: 0px;	
+}
+
+.edit fieldset {
+	border:0;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #ddd;
+}
+
+.edit fieldset fieldset{
+	border: solid 1px #ddd;
+	margin: 6px 0;
+}
+
+.editicon, .editicon img {
+	text-decoration: none;	
+	border:none;
+}
+
+.pseudo {
+	clear: both;
+	margin-top: 80px;
+	background-color: none;
+}

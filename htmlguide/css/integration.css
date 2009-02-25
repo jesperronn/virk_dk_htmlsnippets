@@ -1,0 +1,425 @@
+/* Start file $Id: integration.css 6508 2008-04-11 15:09:43Z jomoll $ 
+   classes regarding iframe and third party styles */
+
+/* Portlet and styles for 3rd party integration */
+
+iframe {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	clear: none;
+}
+
+.virkpartner .small {
+  margin-right: 234px;
+}
+
+.virkpartner .wide {
+  /* no styles necessary */
+}
+
+.virkpartner .no-train {
+  margin-left: 224px;
+}
+.virkpartner .no-train.wide {
+/* moves .no-train.wide class to the left add margin-right */
+  margin-left: 0;
+  margin-right: 234px;
+}
+
+/* page.iframe ensures that layout for iframe and portlet is preserved */
+#page.iframe {
+	margin-bottom: 16px !important;
+	min-height: 0px !important;
+}
+
+.iframe_subtitle {
+	color: #7B736C;
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 36px;
+}
+
+.iframe_title {
+	color: #7B736C;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+
+/* tables */
+.table {
+	width: 100%;
+}
+
+fieldset table 	{
+	border-bottom: 1px solid #dcdad8;
+}
+
+fieldset table tbody td{
+  background-color: #fff
+}
+
+fieldset table caption{
+	background-image: none;
+	color: #000;
+	padding-left:1px;
+	border-bottom: 1px solid #dcdad8;
+}
+
+th a.sortable{
+	color: #000;
+}
+th .sortable.asc{
+	padding-right: 8px;
+	background: url(../images/arrow_up.gif) no-repeat right;
+}
+th .sortable.desc{
+	padding-right: 8px;
+	background: url(../images/arrow_down.gif) no-repeat right;	
+}
+
+th input.sortable {
+  background-color: #d9eff6;
+  border: 0;
+  cursor: pointer;
+  cursor: hand;
+  font-weight: bold;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 0 0 0;/* note: padding-right ignored on buttons: width set according to content*/
+  text-align: left;
+  vertical-align: top;
+  text-decoration: underline; 
+/*note: firefox does not know underline on input fields. Alternative: border-bottom which renders extra whitespace right*/
+/*  border-bottom: 1px solid black;*/
+}
+
+td input.table_action{
+  border: 0;
+  margin-left: 0;
+  padding: 0 !important;
+  line-height: 14px;
+  color: #0080a5;
+  text-decoration: underline;
+  background-color: white;
+  cursor: pointer;
+  cursor: hand;
+}
+
+input.table_action{
+  border: 0;
+  margin-left: 0;
+  padding: 0 !important;
+  line-height: 14px;
+  color: #0080a5;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#frame_integration {
+	border: 0;
+	margin: 0;
+	width: 100%;
+	/* Declaring these again, because they are loaded separately */
+	font-family: Verdana;	
+	font-size: 11px; /*  font-size: 0.95em; */
+	line-height: 15px;
+}
+
+#frame_container {
+	background-image: url(../images/frame_bg.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	color: #fff;
+	/* Prevent scrollbars and fix IE6 bug */
+	overflow-x: hidden;
+	height: 82px;
+}
+
+#frame_container #info {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.edit #info {
+	margin-top: 10px !important;
+}
+
+#frame_container a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.framelogo {
+  display: block;
+  height: 48px;
+  width: 283px;
+}
+
+#frame_container a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#frame_container a.no_login {
+	margin-top: 30px;
+	display: block;
+}
+
+#frame_container img {
+	border: 0;
+}
+
+#frame_integration #logo {
+	position: absolute;
+	left: 20px;
+	top: 14px;
+	width: 283px;
+	height: 48px;
+	cursor: pointer;
+}
+
+/* Train */
+
+#content.train {
+	margin-left: 224px;
+}
+
+ol.train {
+	width: 208px;
+    margin: 0px 16px 0px 0px;
+    padding: 0;
+    float: left;
+}
+
+ol.train li {
+    list-style-position: inside; 
+    margin: 1px 0px 0px 0px;
+    padding: 7px 10px 7px 10px;
+    position: relative;
+    line-height: 12px; /* cancel lineheight 17px on all elements*/
+}
+
+ol.train li p {
+    margin: 2px 0 4px 16px;
+    padding: 0;
+    font-weight: normal;
+    line-height: 14px;
+}
+  
+.train .done {
+  background: url(../images/train-done.png) #e8f4f7 repeat-x bottom;
+  color: #999797
+}
+.train .current {
+  background: url(../images/train-current.png) #fea445 repeat-x bottom;
+  color: #fff;
+  font-weight: bold
+}
+.train .undone {
+  background: url(../images/train-undone.png) #d2e9f0 repeat-x bottom;
+}
+
+.train .tip {
+  height:8px;
+  position:absolute;
+  bottom:-8px;
+  left:0;
+  width:100%;
+}
+
+.train .done b.tip {
+  background: url(../images/train-done-tip.png) no-repeat top;
+}
+.train .current b.tip {
+  background: url(../images/train-current-tip.png) no-repeat top;
+}
+.train .undone b.tip {
+  background: url(../images/train-undone-tip.png) no-repeat top;
+}
+.train .final b.tip {
+  background:none;
+}
+
+/* hide tips from ie6 and below */
+* html .train b.tip{display: none;}
+
+#step1{z-index:20}
+#step2{z-index:19}
+#step3{z-index:18}
+#step4{z-index:17}
+#step5{z-index:16}
+#step6{z-index:15}
+#step7{z-index:14}
+#step8{z-index:13}
+#step9{z-index:12}
+#step10{z-index:11}
+#step11{z-index:9}
+#step12{z-index:8}
+#step13{z-index:7}
+#step14{z-index:6}
+#step15{z-index:5}
+#step16{z-index:4}
+#step17{z-index:3}
+#step18{z-index:2}
+#step19{z-index:1}
+
+.portlet-no-display {
+  display: none;	
+}
+
+.portlet-font {
+	font-family: Verdana;	
+	font-size: 11px;
+	line-height: 17px;
+}
+
+/* Errors, notifications and messages */
+.notificationbox,
+.portlet-msg-status,
+.portlet-msg-info,
+.portlet-msg-error,
+.portlet-msg-alert {
+	background-color: #fff7da;
+	border: 1px solid #dbcabf;
+	padding: 10px;
+	margin: 0 0px 10px 0; /* avoid 2 more pixels from border */
+}
+
+.notificationbox p,
+.portlet-msg-status p,
+.portlet-msg-info p,
+.portlet-msg-error p,
+.portlet-msg-alert p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.notificationbox h2,
+.portlet-msg-status h2,
+.portlet-msg-info h2,
+.portlet-msg-error h2,
+.portlet-msg-alert h2 {
+	margin: 0;
+	font-size: 11px;
+	color: #dd0033;
+	padding-left: 0px;
+	padding-bottom: 0px !important;
+}
+
+.notificationbox ul,
+.portlet-msg-status ul,
+.portlet-msg-info ul,
+.portlet-msg-error ul,
+.portlet-msg-alert ul {
+	padding: 0;
+	margin: 0 0 0 13px;
+	list-style-image: none !important;
+	list-style-type: disc !important;
+	color: #dd0033;
+}
+
+.notificationbox ul li,
+.portlet-msg-status ul li,
+.portlet-msg-info ul li,
+.portlet-msg-error ul li,
+.portlet-msg-alert ul li {
+	margin: 0 0 0 5px;
+	padding: 0;
+	background-image: none !important;
+}
+
+.notificationbox .message, .portlet-msg-success {
+	background-image: url(../images/ok.gif);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+/* Portlet styles not in use yet */
+.portlet-font-dim {
+	/* Not in use */
+}
+
+.portlet-section-body {
+	/* Not in use*/
+}
+
+.portlet-section-alternate {
+	/* Not in use*/
+}
+
+.portlet-section-selected {
+	/* Not in use*/
+}
+
+.portlet-section-footer {
+	/* Not in use*/
+}
+
+.portlet-section-text {
+	/* Not in use*/
+}
+
+.portlet-table-alternate {
+	/* Not in use*/
+}
+         
+.portlet-table-selected {
+	/* Not in use*/
+}
+         
+.portlet-table-footer {
+	/* Not in use*/
+}
+
+.portlet-icon-label {
+	/* Not in use*/
+}
+
+.portlet-dlg-icon-label {
+	/* Not in use*/
+}
+
+.portlet-form-field-label {
+	/* Not in use*/
+}
+
+.portlet-menu {
+	/* Not in use*/
+}
+
+.portlet-menu-item {
+	/* Not in use*/
+}
+
+.portlet-menu-item-selected {
+	/* Not in use*/
+}
+
+.portlet-menu-hover {
+	/* Not in use*/
+}
+
+.portlet-menu-hover-selected {
+	/* Not in use*/
+}
+
+.portlet-menu-cascade-item {
+	/* Not in use*/
+}
+
+.portlet-menu-description {
+	/* Not in use*/
+}
+
+.portlet-menu-caption {
+	/* Not in use*/
+}

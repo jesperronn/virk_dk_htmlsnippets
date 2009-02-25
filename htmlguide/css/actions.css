@@ -1,0 +1,75 @@
+/* Start file $Id: actions.css 6508 2008-04-11 15:09:43Z jomoll $ */
+#menu div.menu {
+    background-color: #d0d0d0 !important;
+}
+div.menu a {
+    font-weight: normal !important;
+}
+.nostyle,
+.nostyle a {
+    background:transparent !important;
+    font-weight: normal !important;
+}
+div.menu,
+div.menu a.menuItem {
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal !important;
+  color: #000000;
+  white-space: nowrap;
+}
+#navigation span a {
+    padding:0 !important;
+}
+div.menu {
+  background-color: #d0d0d0;
+  border: 2px solid;
+  border-color: #f0f0f0 #909090 #909090 #f0f0f0;
+  left: 0px;
+  padding: 0px 1px 1px 0px !important;
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+  z-index: 101;
+}
+
+div.menu a.menuItem {
+  color: #000000 !important;
+  cursor: default;
+  display: block !important;
+  clear:both;
+  padding: 3px 1em !important;
+  text-decoration: none;
+  white-space: nowrap;
+  background-image:none !important;
+  width:120px;
+  font-weight:normal !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.menu a.menuItem:hover, div.menu a.menuItemHighlight {
+  background-color: #000080 !important;
+  color: #ffffff !important;
+  text-decoration:none !important;
+}
+
+div.menu a.menuItem span.menuItemArrow {
+  margin-right: -.75em !important;
+}
+
+div.menu div.menuItemSep {
+  border-top: 1px solid #909090;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 4px 2px;
+}
+
+fieldset {
+    padding:0;
+    margin: 0;
+    clear: both;
+}
+
+.edit fieldset {
+	clear: none !important; /* HACK to get edit mode working properly */
+}

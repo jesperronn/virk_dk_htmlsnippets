@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>Virk.dk - Form grupper (fieldset)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+				<a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>	
+		<div id="navigator">
+			<ul>
+				<li class="menuitem selected">
+					<a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body">
+		<div id="sidebar">
+			<div id="campaign">
+				<div class="box">
+					<h2>Relateret info</h2>
+					<p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+					<ul>
+						<li><a href="example1.html">Eksempel på kontaktformular</a></li>
+						<li><a href="example2.html">Eksempel på udvidet adresseformular</a></li>
+						<li><a href="example3.html">Eksempel på flere kolonner</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="page">
+			<div class="path">
+				<img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">Form grupper (fieldsets)</a>
+			</div>
+			<h1 class="title">HTML guide</h1>
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+		<ul>
+			<li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+			<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+			<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+			<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+		</ul>
+	</li>  
+<li>Element-eksempler
+		<ul>
+			<li class="selected"><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+			<li><a href="form-simple.html">Simple form elementer</a></li>
+			<li><a href="form-special.html">Særlige form elementer</a></li>
+			<li><a href="form-two-column.html">To spaltet form layout</a></li>
+			<li><a href="train.html">"Train": forløbs-indikator</a></li> 
+			<li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+			<li><a href="buttons.html">Knapper</a></li>
+			<li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+			<li><a href="text-markup.html">Tekst, brødtekst</a></li>
+			<li><a href="tables.html">Tabeller</a></li>
+		</ul>
+	</li>
+	<li>Færdige eksempler
+		<ul>
+			<li><a href="example1.html">Kontaktformular</a></li>
+			<li><a href="example2.html">Udvidet adresseformular</a></li>
+			<li><a href="example3.html">Forskellige felter</a></li>
+		</ul>
+	</li>
+	<li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+<!-- end tminclude -->
+				</div>
+				<div class="menuside"></div>
+			</div>
+			<div id="content" class="center">
+			<form name="dummy_form" method="get" action="#">
+				<h2>Form grupper (fieldsets)</h2>
+				<p>Dette eksempel illustrerer brugen af fieldset og simple formularfelter.</p>
+				<p>Fieldsets bruges til at gruppere indhold i formularer, så grupperne får visuel sammenhæng.</p>
+				<div class="hr"></div>
+				<h2>Fieldset eksempel</h2>
+				<div class="fieldset">
+					<fieldset>
+						<legend><span>Personoplysninger</span></legend>
+						<p>Indtast personlige oplysninger</p>
+						<label>Navn<span class="req">*</span><br/>
+						<input type="text" id="navn" name="navn" class="text" value=""/></label><br/>
+						<label>email<span class="req">*</span><br/>
+						<input type="text" id="email" name="email" class="text" value=""/></label><br/>
+					</fieldset>
+				</div>
+				<div class="fieldset">
+					<fieldset>
+						<legend><span>Firmaoplysninger</span></legend>
+						<p>Indtast oplysninger om ansættelse</p>
+						<label>Firmanavn<span class="req">*</span><br/>
+						<input type="text" id="firma" name="firma" class="text" value=""/></label><br/>
+						<label>CVR-nummer<span class="req">*</span><br/>
+						<input type="text" id="cvr" name="cvr" class="text" value=""/></label><br/>
+					</fieldset>
+				</div>
+
+			<div class="hr"></div>
+			<h2>HTML markup til disse eksempler</h2>
+			<div class="fieldset">
+				<fieldset>
+					<legend><span>HTML markup for de to fieldsets</span></legend>
+<pre>
+&lt;div class="fieldset"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;span&gt;Personoplysninger&lt;/span&gt;&lt;/legend&gt;
+    &lt;p&gt;Indtast personlige oplysninger&lt;/p&gt;
+    &lt;label&gt;Navn&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" id="navn" name="navn" class="text" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;email&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" id="email" name="email" class="text" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+
+&lt;div class="fieldset"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;&lt;span&gt;Firmaoplysninger&lt;/span&gt;&lt;/legend&gt;
+    &lt;p&gt;Indtast oplysninger om ansættelse&lt;/p&gt;
+    &lt;label&gt;Firmanavn&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" id="firma" name="firma" class="text" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+    &lt;label&gt;CVR-nummer&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" id="cvr" name="cvr" class="text" value=""/&gt;
+    &lt;/label&gt;&lt;br/&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+</pre>
+        </fieldset>
+	    </div>
+
+	  </form>
+    </div>
+  </div>
+  </div>
+	<div id="footer">
+    <p>HTML Guide, Virk 3.parts løsninger <small>($Id: form-fieldset.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	</div>
+</div>
+</body>
+</html>

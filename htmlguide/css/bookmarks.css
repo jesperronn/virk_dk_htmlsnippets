@@ -1,0 +1,109 @@
+/* Start file $Id: bookmarks.css 6363 2008-03-25 12:55:29Z jomoll $ */
+#bookmarks {
+	margin: 16px 0px 0px 0px;
+	border-bottom: 1px solid #ddd !important;
+}
+
+#bookmarks h1 {
+	background-image: url(../images/bookmark.gif);
+	color: #0589b0;
+}
+
+#bookmarks select {
+	margin-bottom: 6px;
+	padding-bottom: 0;
+}
+
+#bookmarks .links {
+	padding-bottom: 10px;
+}
+
+#bookmarks .box {
+	padding-bottom: 0px;
+}
+
+.bookmark #title {
+	margin-bottom: 0;
+}
+
+ul.bookmarks {
+	margin-bottom: 16px;
+	margin-left: 0px;
+}
+
+ul.bookmarks .hr {
+	margin-top: 11px;
+}
+
+h2.formula, h2.information, h2.search {
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+
+h2.information {
+	background-image: url(../images/type_information.gif);
+	background-repeat: no-repeat;
+	margin-top: 14px;
+}
+
+h2.search {
+	background-image: url(../images/type_search.gif);
+	background-repeat: no-repeat;
+	margin-top: 14px;
+}
+
+h2.formula {
+	background-image: url(../images/type_formula.gif);
+
+	background-repeat: no-repeat;
+}
+
+ul.bookmarks .edit, ul.bookmarks .delete, ul.bookmarks .rss {
+	background-repeat: no-repeat;
+	padding: 0px 0px 10px 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul.bookmarks .edit {
+	background-image: url(../images/edit.gif);
+}
+
+ul.bookmarks .delete {
+	background-image: url(../images/delete.gif);
+	margin-left: 20px;
+}
+
+ul.bookmarks .rss {
+	background-image: url(../images/rss.gif);
+	margin-left: 20px;
+}
+
+ul.bookmarks li {
+	margin-left: 20px;
+	padding-left: 0px;
+	list-style: none !important;
+	background-image: none !important;
+}
+
+ul.bookmarks .source {
+	margin: 0px;
+	color: #7b736c;
+}
+
+ul.bookmarks .note {
+	margin: 0;
+}
+
+ul.bookmarks .title {
+	display: block;
+	margin-top: 15px;
+}
+
+input.bookmark {
+  margin-bottom: 0;
+}
+
+p.source {
+  margin: 0 0 10px 0;
+}

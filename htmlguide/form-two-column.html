@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<head>
+	<title>Virk.dk - To spaltet form layout</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/frame.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/basic.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/forms.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/mitvirk.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/search.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/head.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/leftmenu.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/dia.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/integration.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bookmarks.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/news.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/newsletter.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/admin.css"  type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/htmlguide.css" type="text/css" media="screen" />
+</head>
+
+<body class="htmlguide">
+<div id="frame" class="site-virk" >
+	<div id="header">
+		<div id="topbar">
+			<div id="logo">
+				<a href="http://virk.dk">
+					<img alt="virk.dk logo" src="images/l.jpg" />
+				</a>
+			</div>
+		</div>
+	
+		<div id="navigator">
+
+		<ul>
+			<li class="menuitem selected">
+				<a title="HTML Guide" class="link" href="index.html"><span>HTML Guide</span></a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div id="body">
+
+		<div id="sidebar">
+			<div id="campaign">
+				<div class="box">
+					<h2>Relateret info</h2>
+					<p>Eksempelsiderne indeholder gode eksempler på forskellig brug af felter og elementer:</p>
+					<ul>
+						<li><a href="example1.html">Kontaktformular</a></li>
+						<li><a href="example2.html">Udvidet adresseformular</a></li>
+						<li><a href="example3.html">Flere kolonner</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="page">
+			<div class="path">
+		<img alt='&gt;' src='images/a1.gif'/> <a href="index.html">Forside</a> <img alt='&gt;' src='images/a1.gif'/> <a href="#">To-spaltet layout</a>
+</div>
+
+			<h1 class="title">HTML Guide</h1>
+
+
+			<div id="menu">
+				<div class="menuside"></div>
+				<div class="menucenter">
+
+<!-- #tminclude "~/rails/e+s-htmlguide/toc.html" -->
+<h2 class="toc"><a href="index.html">Indhold</a></h2>
+<ul class="toc">
+	<li><a href="html-sidetyper.html">Sidetyper</a>
+		<ul>
+			<li><a href="html-no-train-small.html">Skabelon (basal)</a></li>
+			<li><a href="html-train-small.html">Skabelon (med forløbsindikator)</a></li>
+			<li><a href="html-train-wide.html">Skabelon bred (med forløbsindikator)</a></li>
+			<li><a href="html-no-train-wide.html">Skabelon bred (uden forløbsindikator)</a></li>
+		</ul>
+	</li>  
+<li>Element-eksempler
+		<ul>
+			<li><a href="form-fieldset.html">Form grupper (fieldset)</a></li>
+			<li><a href="form-simple.html">Simple form elementer</a></li>
+			<li><a href="form-special.html">Særlige form elementer</a></li>
+			<li class="selected"><a href="form-two-column.html">To-spaltet layout</a></li>
+			<li><a href="train.html">"Train": forløbs-indikator</a></li> 
+			<li><a href="notification.html">Advarsler, fejlmeddelelser</a></li>
+			<li><a href="buttons.html">Knapper</a></li>
+			<li><a href="prevnext.html">Forrige/Næste navigationsknapper</a></li>
+			<li><a href="text-markup.html">Tekst, brødtekst</a></li>
+			<li><a href="tables.html">Tabeller</a></li>
+		</ul>
+	</li>
+	<li>Færdige eksempler
+		<ul>
+			<li><a href="example1.html">Kontaktformular</a></li>
+			<li><a href="example2.html">Udvidet adresseformular</a></li>
+			<li><a href="example3.html">Forskellige felter</a></li>
+		</ul>
+	</li>
+	<li><a href="browsers.html">Browser kompatibilitet og tilgængelighed</a></li>
+</ul>
+
+<!-- end tminclude -->
+
+						</div>
+				<div class="menuside"></div>
+					</div>
+			<div id="content" class="center">
+				<h2>To-spaltet layout</h2>
+				<form name="dummy_form" method="get" action="#">
+					<p>Dette eksempel illustrerer, hvordan et to-kolonne design skabes.</p>
+					<p>Det vil typisk kunne benyttes for særligt korte felter, hvor felterne opstilles i spalter.</p>
+					<p>Layoutet opnås ved at tilføje <em>class="floatleft"</em> på felter i samme række, og dernæst adskille linjeskift eksplicit for linjerne.</p>
+					<div class="fieldset">
+						<fieldset>
+							<legend><span>Flerkolonne indhold</span></legend>
+							
+							<label class="floatleft">Felt i første kolonne
+							<span class="req">*</span><br/>
+							<input type="text" class="short text" value=""/></label>
+				
+							<label class="floatleft">Felt i anden kolonne<br/>
+							<input type="text" class="short text" value=""/></label>
+							<br class="clearfix"/>
+				
+							<label class="floatleft">Select felt<span class="req">*</span><br/>
+							<select id="select" name="select" class="short">
+								<option value="val">vælg fra listen...</option>
+							</select></label>
+				
+							<label class="floatleft">Felt ved siden af select
+								<span class="req">*</span><br/>
+								<input type="text" id="id" name="id" class="short text" value=""/>
+							</label>
+							<br class="clearfix"/>
+							
+							<label class="floatleft">Tilføj navn<br/>
+								<input type="text" class="short text" value="skriv navn der skal tilføjes"/>
+							</label>
+							
+							<label class="floatleft"><br/>
+								<input type="button" class="button" value="Tilføj"/>
+							</label>
+							<br class="clearfix"/>
+				
+							<label>Extra felt der går på tværs<span class="req">*</span><br/>
+							<input type="text" id="x" name="x" class="text" value=""/></label><br/>
+						</fieldset>
+					</div>
+					<input type="submit" class="floatleft short button" name="save" id="save" value="Gem" />
+					<input type="reset" value="Annuller" class="floatleft button" id="cancel" name="cancel" />
+					<br class="clearfix" />
+					<br />
+
+					<div class="fieldset">
+						<fieldset>
+							<legend><span>Markup for flerkolonne layout</span></legend>
+<pre>
+&lt;form&gt;
+  &lt;div class="fieldset"&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;&lt;span&gt;Flerkolonne indhold&lt;/span&gt;&lt;/legend&gt;
+      
+      &lt;label <em>class="floatleft"</em>&gt;Felt i første kolonne
+      &lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" class="short text" value=""/&gt;&lt;/label&gt;
+
+      &lt;label <em>class="floatleft"</em>&gt;Felt i anden kolonne&lt;br/&gt;
+      &lt;input type="text" class="short text" value=""/&gt;&lt;/label&gt;
+      <em>&lt;br class="clearfix"/&gt;</em>
+
+      &lt;label <em>class="floatleft"</em>&gt;Select felt&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;select id="select" name="select" class="short"&gt;
+        &lt;option value="val"&gt;vælg fra listen...&lt;/option&gt;
+      &lt;/select&gt;&lt;/label&gt;
+
+      &lt;label <em>class="floatleft"</em>&gt;Felt ved siden af select
+        &lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+        &lt;input type="text" id="id" name="id" class="short text" value=""/&gt;
+      &lt;/label&gt;
+      <em>&lt;br class="clearfix"/&gt;</em>
+      
+      &lt;label <em>class="floatleft"</em>&gt;Tilføj navn&lt;br/&gt;
+        &lt;input type="text" class="short text" value="skriv navn der skal tilføjes"/&gt;
+      &lt;/label&gt;
+      
+      &lt;label <em>class="floatleft"</em>&gt;&lt;br/&gt;
+        &lt;input type="button" class="button" value="Tilføj"/&gt;
+      &lt;/label&gt;
+      <em>&lt;br class="clearfix"/&gt;</em>
+
+      &lt;label&gt;Extra felt der går på tværs&lt;span class="req"&gt;*&lt;/span&gt;&lt;br/&gt;
+      &lt;input type="text" id="x" name="x" class="text" value=""/&gt;&lt;/label&gt;&lt;br/&gt;
+    &lt;/fieldset&gt;
+  &lt;/div&gt;
+  &lt;input type="submit" class="<em>floatleft</em> short button" name="save" id="save" value="Gem" /&gt;
+  &lt;input type="reset" value="Annuller" class="<em>floatleft</em> button" id="cancel" name="cancel" /&gt;
+ <em> &lt;br class="clearfix" /&gt;</em>
+  &lt;br /&gt;
+&lt;/form&gt;
+</pre>
+			      </fieldset>
+			    </div>
+				</form>
+		  </div>
+	  </div>
+  </div>
+	<div id="footer">
+    <p>HTML Guide, Virk 3.parts løsninger <small>($Id: form-two-column.html 5668 2008-01-28 11:09:50Z jronn $)</small></p>
+	</div>
+</div>
+</body>
+</html>

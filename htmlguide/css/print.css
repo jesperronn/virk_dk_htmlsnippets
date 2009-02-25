@@ -1,0 +1,221 @@
+#topbar, #subnavigator, #navigator, #searchbox, #logo, #footer, #bottom, #sidebar, .tools, .hr, .notificationbox, #jahiapanel {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+	background: white;
+	line-height: 11pt !important;
+}
+
+h1.title {
+  font-size: 13pt !important; /* Pts are okay, because we print them */
+  line-height: 13pt !important;
+  color: #bbbbbb !important;
+}
+
+h2 {
+  font-family: Verdana;
+  font-size: 10pt !important; /* Pts are okay, because we print them */
+  line-height: 10pt !important;
+}
+
+h3 {
+  font-family: Verdana;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 9pt !important;
+}
+
+/* Hack, to trick the browser to print another logo */
+/* Unfortunetaly, Firefox on Windows doesn't show logo on print - see Mozilla bug 133490 for further details */
+#header {
+  display: list-item; 
+  list-style-image: url(../images/logo_print.gif); 
+  list-style-position: inside;
+	margin: 0 !important;
+  padding: 0 !important;
+	height: 50pt;
+}
+
+/* Style breadcrumb different */
+.path {
+  border-top: 1px solid #bbb;
+  padding-top: 5px;
+  margin-top: 70px;
+}
+
+div.paginator a, div.paginator .here a, div.paginator .here a:visited {
+	border: none;
+	text-decoration: none !important;
+	font-size: 9pt !important;
+}
+
+#content {
+  width: auto;
+	border: 0;
+	color: black; 
+	background: transparent;
+	font-family: Verdana !important;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 9pt !important;
+}
+
+#content p {
+  color: black; 
+	background: transparent;
+	font-family: Verdana;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 11pt;
+}
+
+#content ul {
+	list-style-type: disc !important;
+	margin-left: 10px !important;
+}
+
+#content ol {
+  list-style-image: none;
+}
+
+#content li {
+  font-family: Verdana;
+  font-size: 9pt !important; /* Pts are okay, because we print them */
+  line-height: 9pt !important;
+  margin-bottom: 3pt !important;
+}
+
+/* Handle link behaviour */
+#content a {
+	color: #079dc4;
+	background: transparent;
+  font-size: 8pt !important;
+	text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #bbb !important;
+}
+
+#content table, #content td, #content th, #content tr {
+  border: 0;
+}
+
+/* Intro pages */
+.authorityText {
+	padding-left: 0px !important;
+	margin-left: 0px !important;
+}
+
+#help_info .freestyle h2, #guidelines .freestyle h2, .authorityText .freestyle h2, h2.adress, h2.email, #formularDescription strong, #formularPrerequisites strong {
+	font-size: 8pt !important;
+}
+
+h2.email, h2.rss {
+	padding-left: 0px !important;
+}
+
+#help_info .freestyle a, #guidelines .freestyle a, #secureEmail .freestyle a, #address .freestyle a, #rssInfo .freestyle a, .authorityText .freestyle p {
+	font-size: 7pt !important;
+}
+
+#formularDescription ul, #formularPrerequisites ul {
+	padding: 10px;
+}
+
+#menu a {
+	color: #079dc4;
+	background: transparent;
+  font-size: 8pt !important;
+}
+
+/* Hide search specific elements from print */
+.searcharea, .searchnavigators .options, #FastSearchRadio {
+	display: none;
+	visibility: hidden;
+}
+
+.searchbottom h2 {
+	float: left;
+	font-size: 7pt;
+	font-weight: normal;
+}
+
+.searchbottom h2.key {
+	margin-right: 175px;
+}
+
+.searchbottom {
+	border-top: 1px solid #ddd;
+	margin-top: 10px;
+	padding-top: 5px;
+}
+
+.searchnavigator.tax, .searchnavigator.key {
+	clear: left;
+}
+
+.searchnavigators .path {
+	margin-top: 10px;
+	border: none;
+	font-size: 7pt;
+	float: left;
+	margin-right: 50px;
+}
+
+/* HACK: Placing the navigator title absolute to make it work in situations where keywords or categories are left out */
+.searchnavigators .aut {
+	position: absolute;
+	top: 320px;
+	left: 280px;
+}
+
+.searchnavigators .com {
+	position: absolute;
+	top: 320px;
+	left: 420px;
+}
+
+.searchnavigator .path a, .searchnavigator .path a:link, .searchnavigator .path a:visited {
+	text-decoration: none !important;
+	font-size: 7pt !important;
+	font-weight: normal !important;
+	color: #000 !important;
+}
+
+div#filterlist {
+	clear: left;
+	margin-top: 70px;
+}
+
+div#FastSearchResultList.globalsearch {
+	clear: left;
+	margin-top: 70px;
+}
+
+/* Hide list bullets on print */
+#FastSearchResultList ul li {
+	list-style-image: none;
+	list-style-type: none;
+}
+
+ul.searchresult li a {
+	padding-left: 0px !important;
+}
+
+.searchbottom {
+	height: auto;
+}
+
+/* This prints actual urls after each link on fully CSS2 compliant browsers */
+/*#content a:link:after, a:visited:after {
+  content: " (" attr(href) ")" !important;
+  font-size: 75% !important;
+}
+
+#content #menu a:link:after, a:visited:after {
+  content: "" !important;
+}
+
+#content a[href^="/"]:after {
+  content: " (http://www.virk.dk" attr(href) ") ";
+}*/

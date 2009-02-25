@@ -1,0 +1,47 @@
+/* Start file $Id: aqtree3clickable.css 3462 2007-11-09 13:47:46Z jronn $ */
+/* Turn off list bullets */
+ul.aqtree3clickable li { list-style: none; }
+
+ul.aqtree3clickable, ul.aqtree3clickable ul, ul.aqtree3clickable li {
+  margin: 0; padding: 0; 
+}
+
+/* This controls the indent for each sublist */
+ul.aqtree3clickable ul {
+  padding-left: 15px;
+}
+
+/* Provide space for our own "bullet" inside the link */
+ul.aqtree3clickable li .fold {
+  padding-left: 15px;
+}
+
+ul.aqtree3clickable li.aq3bullet a {
+  padding-left: 15px; 
+}
+/* Show "bullets" in the links, depending on the class of the
+   LI that the link's in */
+ul.aqtree3clickable li.aq3open .fold { /* minus sign */
+    background: url(../images/fold.gif) bottom left no-repeat;
+    cursor:pointer; cursor:hand;
+    width:1%;
+}
+ul.aqtree3clickable li.aq3closed .fold {/* plus sign */
+    background: url(../images/fold.gif) top left no-repeat;
+    cursor:pointer; cursor:hand;
+    width:1%;
+}
+ul.aqtree3clickable li.aq3bullet a {
+}
+
+ul.aqtree3clickable ul li{
+  margin-left: 10px;
+  padding:0;
+}
+ul.aqtree3clickable ul li a{
+  padding:0 !important;
+}
+
+/* Actually show and hide sublists */
+ul.aqtree3clickable li.aq3open ul { display: block; }
+ul.aqtree3clickable li.aq3closed ul { display: none; }
