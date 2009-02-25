@@ -14,22 +14,22 @@ Snippets available
 `skel`(tab) -- creates HTML skeleton in blank file. Adds correct doctype, head, body and container divs required for the virk.dk html to show correctly.
 
 `fieldset`(tab)   Groups of form elements. Use where you would have used ordinary fieldsets. 
-See HTML guide &raquo; [Form grupper (fieldsets)]
-(http://xmltools2.oio.dk/virk/htmlguide/form-fieldset.html)  
+See HTML guide &raquo; [Form grupper (fieldsets)](http://xmltools2.oio.dk/virk/htmlguide/form-fieldset.html)  
 `float`(tab) -- ??
 
 `button`(tab) -- submit button and other buttons. See HTML guide &raquo;
- [Knapper](http://xmltools2.oio.dk/virk/htmlguide/buttons.html) 
-`inputcheck`(tab) -- checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)  
-`inputradio`(tab) -- checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)  
-`inputtext`(tab) -- checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)  
-`select`(tab) -- checkbox. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)  
-`option`(tab) -- options inside a select element. See HTML guide 
-&raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)  
-`readonly`(tab) -- readonly element. See HTML guide 
-&raquo; [Særlige form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-special.html)  
-`textarea`(tab) -- textarea element. See HTML guide &raquo; [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html)
+ [Knapper](http://xmltools2.oio.dk/virk/htmlguide/buttons.html)
+ 
+`inputcheck`(tab) -- standard checkbox with label and group     
+`inputradio`(tab) -- radio button (Not implemented) 
+`inputtext`(tab) -- text field   
+`select`(tab) -- select element    
+`option`(tab) -- options inside a select element  
+`readonly`(tab) -- readonly element (readonly text that is visually set up to work with form elements)  
+`textarea`(tab) -- textarea element
 
+Usage examples see HTML guide [Simple form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-simple.html),
+ [Særlige form elementer](http://xmltools2.oio.dk/virk/htmlguide/form-special.html)  
 
 `table`(tab) -- table element. See HTML guide &raquo; [Tabeller](http://xmltools2.oio.dk/virk/htmlguide/tables.html)  
 `td`(tab) -- table cell inside table row.  
